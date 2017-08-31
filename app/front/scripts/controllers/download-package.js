@@ -84,7 +84,7 @@ angular.module('Application')
 
       function pollPipelineUntilReady(executionOverviewUrl) {
         stop = $interval(function () {
-          $http.get('https://crossorigin.me/' + executionOverviewUrl, {withCredentials: false}).then(
+          $http.get(executionOverviewUrl, {withCredentials: false}).then(
             function (res) {
               console.log(res);
               if (res.data.status['@id'].includes('finished')) {

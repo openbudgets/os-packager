@@ -9,15 +9,6 @@
     "templateUrl": "templates/steps/upload-file.html"
   },
   {
-    "id": "describe-data",
-    "order": 2,
-    "title": "Describe your data",
-    "subtitle": "Map as accurately as possible columns of your file to data types",
-    "route": "/describe-data",
-    "controller": "DescribeDataController",
-    "templateUrl": "templates/steps/describe-data.html"
-  },
-  {
     "id": "metadata",
     "order": 3,
     "title": "Provide metadata",

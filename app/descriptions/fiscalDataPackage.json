@@ -1,0 +1,80 @@
+{
+  "model": {
+    "dimensions": {
+      "date": {
+        "dimensionType": "datetime",
+        "primaryKey": [
+          "year"
+        ],
+        "attributes": {
+          "year": {
+            "source": "year",
+            "title": "year"
+          }
+        }
+      }
+    },
+    "measures": {
+      "amount": {
+        "source": "amount",
+        "title": " amount",
+        "currency": "USD"
+      }
+    }
+  },
+  "promise": {
+    "_c": [],
+    "_s": 1,
+    "_d": true,
+    "_h": 0,
+    "_n": false
+  },
+  "title": "test",
+  "name": "test",
+  "resources": [
+    {
+      "name": "data",
+      "format": "csv",
+      "path": "data.csv",
+      "mediatype": "text/csv",
+      "bytes": 37,
+      "dialect": {
+        "csvddfVersion": 1,
+        "delimiter": ",",
+        "lineTerminator": "\n"
+      },
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "title": "year",
+            "name": "year",
+            "slug": "year",
+            "type": "integer",
+            "format": "default",
+            "osType": "date:fiscal-year",
+            "conceptType": "date"
+          },
+          {
+            "title": "amount",
+            "name": "amount",
+            "slug": "amount",
+            "type": "number",
+            "format": "default",
+            "osType": "value",
+            "conceptType": "value",
+            "decimalChar": ".",
+            "groupChar": ","
+          }
+        ],
+        "primaryKey": [
+          "year"
+        ]
+      }
+    }
+  ],
+  "@context": "http://schemas.frictionlessdata.io/fiscal-data-package.jsonld",
+  "owner": "5537104a902b0847bb7b474225eced5a",
+  "author": "yakun li <liyakun127@gmail.com>",
+  "count_of_rows": 5
+}

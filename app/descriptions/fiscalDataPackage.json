@@ -17,7 +17,7 @@
     "measures": {
       "amount": {
         "source": "amount",
-        "title": " amount",
+        "title": "amount",
         "currency": "USD"
       }
     }

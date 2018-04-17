@@ -89,13 +89,6 @@
     }
   },
   "promise": {},
-  "regionCode": "eu",
-  "countryCode": "DE",
-  "title": "merzenich-test1",
-  "name": "merzenich1",
-  "description": "merzenich-test1",
-  "owner": "6c38343baba9d47c1b8efedff36836c4",
-  "author": "Fabrizio Orlandi <fabriziorlandi@gmail.com>",
   "resources": [
     {
       "name": "openbudget_merzenich_plan_2017-copy",

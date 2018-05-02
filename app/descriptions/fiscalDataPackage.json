@@ -1,201 +1,339 @@
 {
+  "@context": "http://schemas.frictionlessdata.io/fiscal-data-package.jsonld",
+  "author": "yakun li <liyakun127@gmail.com>",
+  "bytes": 696708,
+  "count_of_rows": 5158,
+  "hash": "d2eb43153ebece619c231690d9772e7f",
   "model": {
     "dimensions": {
-      "budget-line-id": {
-        "dimensionType": "fact",
-        "primaryKey": [
-          "ID"
-        ],
+      "administrative-classification": {
         "attributes": {
-          "ID": {
-            "source": "ID",
-            "title": "ID"
+          "kostenart": {
+            "parent": "produktgruppe",
+            "source": "kostenart",
+            "title": "Kostenart"
+          },
+          "produktbereich": {
+            "source": "produktbereich",
+            "title": "Produktbereich"
+          },
+          "produktgruppe": {
+            "parent": "produktbereich",
+            "source": "produktgruppe",
+            "title": "Produktgruppe"
           }
-        }
-      },
-      "direction": {
-        "dimensionType": "other",
-        "primaryKey": [
-          "Budget_Richtung"
-        ],
-        "attributes": {
-          "Budget_Richtung": {
-            "source": "Budget_Richtung",
-            "title": "Budget_Richtung"
-          }
-        }
-      },
-      "date": {
-        "dimensionType": "datetime",
-        "primaryKey": [
-          "Jahr"
-        ],
-        "attributes": {
-          "Jahr": {
-            "source": "Jahr",
-            "title": "Jahr"
-          }
-        }
-      },
-      "functional-classification": {
+        },
+        "classificationType": "administrative",
         "dimensionType": "classification",
         "primaryKey": [
-          "Bezeichnung",
-          "Text"
-        ],
+          "produktbereich",
+          "produktgruppe",
+          "kostenart"
+        ]
+      },
+      "budget-line-id": {
         "attributes": {
-          "Bezeichnung": {
-            "source": "Bezeichnung",
+          "id": {
+            "source": "id",
+            "title": "ID"
+          }
+        },
+        "dimensionType": "fact",
+        "primaryKey": [
+          "id"
+        ]
+      },
+      "date": {
+        "attributes": {
+          "jahr": {
+            "source": "jahr",
+            "title": "Jahr"
+          }
+        },
+        "dimensionType": "datetime",
+        "primaryKey": [
+          "jahr"
+        ]
+      },
+      "direction": {
+        "attributes": {
+          "bezeichnung": {
+            "source": "bezeichnung",
             "title": "Bezeichnung"
           },
-          "Text": {
-            "source": "Text",
+          "budget_richtung": {
+            "source": "budget_richtung",
+            "title": "Budget_Richtung"
+          }
+        },
+        "dimensionType": "other",
+        "primaryKey": [
+          "budget_richtung",
+          "bezeichnung"
+        ]
+      },
+      "functional-classification": {
+        "attributes": {
+          "text": {
+            "source": "text",
             "title": "Text"
           }
         },
-        "classificationType": "functional"
-      },
-      "administrative-classification": {
+        "classificationType": "functional",
         "dimensionType": "classification",
         "primaryKey": [
-          "Produktbereich",
-          "Produktgruppe",
-          "Kostenart"
-        ],
-        "attributes": {
-          "Produktbereich": {
-            "source": "Produktbereich",
-            "title": "Produktbereich"
-          },
-          "Produktgruppe": {
-            "source": "Produktgruppe",
-            "title": "Produktgruppe"
-          },
-          "Kostenart": {
-            "source": "Kostenart",
-            "title": "Kostenart"
-          }
-        },
-        "classificationType": "administrative"
+          "text"
+        ]
       }
     },
     "measures": {
-      "Betrag": {
-        "source": "Betrag",
-        "title": "Betrag",
-        "currency": "EUR",
-        "phase": "approved"
+      "betrag": {
+        "source": "betrag",
+        "title": "Betrag"
       }
     }
+  },
+  "name": "merzenich_level_level_test",
+  "owner": "5537104a902b0847bb7b474225eced5a",
+  "profile": "data-package",
+  "profiles": {
+    "fiscal": "*",
+    "tabular": "*"
   },
   "promise": {},
   "resources": [
     {
-      "name": "openbudget_merzenich_plan_2017-copy",
-      "format": "csv",
-      "path": "OpenBudget_Merzenich_Plan_2017 (copy).csv",
-      "mediatype": "text/csv",
-      "bytes": 169728,
+      "bytes": 522522,
+      "count_of_rows": 3093,
       "dialect": {
-        "csvddfVersion": 1,
         "delimiter": ",",
-        "lineTerminator": "\n"
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
       },
+      "dpp:streamedFrom": "/tmp/tmp35d0tx5a/final/data/openbudget_merzenich_plan_2017-copy.csv",
       "encoding": "utf-8",
+      "format": "csv",
+      "hash": "098d85b8696d074510d95c0f2d57078d",
+      "mediatype": "text/csv",
+      "name": "openbudget_merzenich_plan_2017-copy",
+      "path": "data/openbudget_merzenich_plan_2017-copy.csv",
+      "profile": "data-resource",
       "schema": {
         "fields": [
           {
-            "title": "ID",
-            "name": "ID",
-            "slug": "ID",
-            "type": "string",
+            "conceptType": "budget-line-id",
             "format": "default",
+            "name": "id",
             "osType": "budget-line-id",
-            "conceptType": "budget-line-id"
+            "slug": "id",
+            "title": "ID",
+            "type": "string"
           },
           {
-            "title": "Betrag",
-            "name": "Betrag",
-            "slug": "Betrag",
-            "type": "number",
-            "format": "default",
-            "osType": "value",
             "conceptType": "value",
             "decimalChar": ".",
-            "groupChar": ","
+            "format": "default",
+            "groupChar": "",
+            "name": "betrag",
+            "osType": "value",
+            "slug": "betrag",
+            "title": "Betrag",
+            "type": "number"
           },
           {
-            "title": "Budget_Richtung",
-            "name": "Budget_Richtung",
-            "slug": "Budget_Richtung",
-            "type": "string",
+            "conceptType": "direction",
             "format": "default",
+            "name": "budget_richtung",
             "osType": "direction",
-            "conceptType": "direction"
+            "slug": "budget_richtung",
+            "title": "Budget_Richtung",
+            "type": "string"
           },
           {
-            "title": "Jahr",
-            "name": "Jahr",
-            "slug": "Jahr",
-            "type": "integer",
+            "conceptType": "date",
             "format": "default",
+            "name": "jahr",
             "osType": "date:fiscal-year",
-            "conceptType": "date"
+            "slug": "jahr",
+            "title": "Jahr",
+            "type": "integer"
           },
           {
+            "conceptType": "direction",
+            "format": "default",
+            "name": "bezeichnung",
+            "osType": "direction",
+            "slug": "bezeichnung",
             "title": "Bezeichnung",
-            "name": "Bezeichnung",
-            "slug": "Bezeichnung",
-            "type": "string",
-            "format": "default",
-            "osType": "functional-classification:generic:description",
-            "conceptType": "functional-classification"
+            "type": "string"
           },
           {
+            "conceptType": "functional-classification",
+            "format": "default",
+            "name": "text",
+            "osType": "functional-classification:generic:level1:code",
+            "slug": "text",
             "title": "Text",
-            "name": "Text",
-            "slug": "Text",
-            "type": "string",
-            "format": "default",
-            "osType": "functional-classification:generic:description",
-            "conceptType": "functional-classification"
+            "type": "string"
           },
           {
+            "conceptType": "administrative-classification",
+            "format": "default",
+            "name": "produktbereich",
+            "osType": "administrative-classification:generic:level1:code",
+            "slug": "produktbereich",
             "title": "Produktbereich",
-            "name": "Produktbereich",
-            "slug": "Produktbereich",
-            "type": "string",
-            "format": "default",
-            "osType": "administrative-classification:generic:level2:description",
-            "conceptType": "administrative-classification"
+            "type": "string"
           },
           {
+            "conceptType": "administrative-classification",
+            "format": "default",
+            "name": "produktgruppe",
+            "osType": "administrative-classification:generic:level2:code:full",
+            "slug": "produktgruppe",
             "title": "Produktgruppe",
-            "name": "Produktgruppe",
-            "slug": "Produktgruppe",
-            "type": "string",
-            "format": "default",
-            "osType": "administrative-classification:generic:level1:description",
-            "conceptType": "administrative-classification"
+            "type": "string"
           },
           {
-            "title": "Kostenart",
-            "name": "Kostenart",
-            "slug": "Kostenart",
-            "type": "string",
+            "conceptType": "administrative-classification",
             "format": "default",
-            "osType": "administrative-classification:generic:level3:description",
-            "conceptType": "administrative-classification"
+            "name": "kostenart",
+            "osType": "administrative-classification:generic:level3:code:full",
+            "slug": "kostenart",
+            "title": "Kostenart",
+            "type": "string"
           }
         ],
         "primaryKey": [
-          "ID",
-          "Budget_Richtung",
-          "Jahr"
+          "id",
+          "budget_richtung",
+          "jahr",
+          "bezeichnung",
+          "text",
+          "produktbereich",
+          "produktgruppe",
+          "kostenart"
+        ]
+      }
+    },
+    {
+      "bytes": 348348,
+      "count_of_rows": 2062,
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmp35d0tx5a/final/data/openbudget_merzenich_plan_2017-copy__2017.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "098d85b8696d074510d95c0f2d57078d",
+      "mediatype": "text/csv",
+      "name": "openbudget_merzenich_plan_2017-copy__2017",
+      "path": "data/openbudget_merzenich_plan_2017-copy__2017.csv",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "conceptType": "budget-line-id",
+            "format": "default",
+            "name": "id",
+            "osType": "budget-line-id",
+            "slug": "id",
+            "title": "ID",
+            "type": "string"
+          },
+          {
+            "conceptType": "value",
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "betrag",
+            "osType": "value",
+            "slug": "betrag",
+            "title": "Betrag",
+            "type": "number"
+          },
+          {
+            "conceptType": "direction",
+            "format": "default",
+            "name": "budget_richtung",
+            "osType": "direction",
+            "slug": "budget_richtung",
+            "title": "Budget_Richtung",
+            "type": "string"
+          },
+          {
+            "conceptType": "date",
+            "format": "default",
+            "name": "jahr",
+            "osType": "date:fiscal-year",
+            "slug": "jahr",
+            "title": "Jahr",
+            "type": "integer"
+          },
+          {
+            "conceptType": "direction",
+            "format": "default",
+            "name": "bezeichnung",
+            "osType": "direction",
+            "slug": "bezeichnung",
+            "title": "Bezeichnung",
+            "type": "string"
+          },
+          {
+            "conceptType": "functional-classification",
+            "format": "default",
+            "name": "text",
+            "osType": "functional-classification:generic:level1:code",
+            "slug": "text",
+            "title": "Text",
+            "type": "string"
+          },
+          {
+            "conceptType": "administrative-classification",
+            "format": "default",
+            "name": "produktbereich",
+            "osType": "administrative-classification:generic:level1:code",
+            "slug": "produktbereich",
+            "title": "Produktbereich",
+            "type": "string"
+          },
+          {
+            "conceptType": "administrative-classification",
+            "format": "default",
+            "name": "produktgruppe",
+            "osType": "administrative-classification:generic:level2:code:full",
+            "slug": "produktgruppe",
+            "title": "Produktgruppe",
+            "type": "string"
+          },
+          {
+            "conceptType": "administrative-classification",
+            "format": "default",
+            "name": "kostenart",
+            "osType": "administrative-classification:generic:level3:code:full",
+            "slug": "kostenart",
+            "title": "Kostenart",
+            "type": "string"
+          }
+        ],
+        "primaryKey": [
+          "id",
+          "budget_richtung",
+          "jahr",
+          "bezeichnung",
+          "text",
+          "produktbereich",
+          "produktgruppe",
+          "kostenart"
         ]
       }
     }
   ],
-  "@context": "http://schemas.frictionlessdata.io/fiscal-data-package.jsonld",
-  "count_of_rows": 0
+  "title": "merzenich_level_level_test"
 }

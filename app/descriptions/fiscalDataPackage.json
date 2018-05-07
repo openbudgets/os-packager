@@ -196,9 +196,7 @@
           }
         ],
         "primaryKey": [
-          "ID",
-          "Budget_Richtung",
-          "Jahr"
+          "ID"
         ]
       }
     }

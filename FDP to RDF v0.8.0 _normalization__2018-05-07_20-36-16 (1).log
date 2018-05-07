@@ -1,0 +1,967 @@
+2018-05-07 20:36:16,037 [web-server-10781] INFO  c.l.e.e.e.Execution - Pipeline execution begin.
+2018-05-07 20:36:16,038 [asynchExecutor-1] DEBUG o.e.r.s.n.NativeStore - Initializing NativeStore...
+2018-05-07 20:36:16,039 [asynchExecutor-1] DEBUG o.e.r.s.n.NativeStore - Data dir is /data/lp/etl/working/data/38d801ee-3fef-4f93-b4f1-14a4a0e8aa5e/working/pipeline_repository-1
+2018-05-07 20:36:16,050 [asynchExecutor-1] DEBUG o.e.r.s.n.TripleStore - No indexes specified, using default indexes: spoc,posc
+2018-05-07 20:36:16,051 [asynchExecutor-1] DEBUG o.e.r.s.n.NativeStore - NativeStore initialized
+2018-05-07 20:36:16,129 [asynchExecutor-1] DEBUG o.e.r.s.n.NativeStore - Initializing NativeStore...
+2018-05-07 20:36:16,129 [asynchExecutor-1] DEBUG o.e.r.s.n.NativeStore - Data dir is /data/lp/etl/working/data/38d801ee-3fef-4f93-b4f1-14a4a0e8aa5e/working/temp-94
+2018-05-07 20:36:16,131 [asynchExecutor-1] DEBUG o.e.r.s.n.TripleStore - No indexes specified, using default indexes: spoc,posc
+2018-05-07 20:36:16,131 [asynchExecutor-1] DEBUG o.e.r.s.n.NativeStore - NativeStore initialized
+2018-05-07 20:36:16,201 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/80
+2018-05-07 20:36:16,214 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/63
+2018-05-07 20:36:16,230 [HTTP get cl-geo codelist] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/80
+2018-05-07 20:36:16,230 [HTTP get cl-geo codelist] WARN  c.l.p.e.httpget.HttpGet - 'Trust all certs' policy used -> security risk!
+2018-05-07 20:36:16,233 [HTTP get cl-geo codelist] INFO  c.l.p.e.httpget.HttpGet - Downloading: https://github.com/openbudgets/Code-lists/raw/master/UnifiedViews/skosified/cl_geo/cl-geo.ttl -> cl-geo.ttl
+2018-05-07 20:36:20,386 [HTTP get cl-geo codelist] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/80
+2018-05-07 20:36:20,386 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/80
+2018-05-07 20:36:20,392 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/34
+2018-05-07 20:36:20,394 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/147
+2018-05-07 20:36:20,401 [Pipeline input] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/34
+2018-05-07 20:36:20,403 [Pipeline input] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/34
+2018-05-07 20:36:20,403 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/34
+2018-05-07 20:36:20,408 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/35
+2018-05-07 20:36:20,410 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/87
+2018-05-07 20:36:20,410 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/88
+2018-05-07 20:36:20,420 [Files filter] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/35
+2018-05-07 20:36:20,420 [Files filter] DEBUG c.l.p.t.f.FilesFilter - Pattern: datapackage.jsonld
+2018-05-07 20:36:20,420 [Files filter] DEBUG c.l.p.t.f.FilesFilter - Entry: package-url.jsonld : false
+2018-05-07 20:36:20,420 [Files filter] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/35
+2018-05-07 20:36:20,420 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/35
+2018-05-07 20:36:20,426 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/24
+2018-05-07 20:36:20,428 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/130
+2018-05-07 20:36:20,428 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/132
+2018-05-07 20:36:20,436 [Files to RDF] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/24
+2018-05-07 20:36:20,436 [Files to RDF] DEBUG c.l.e.d.c.f.DefaultFilesDataUnit - Computing size ...
+2018-05-07 20:36:20,436 [Files to RDF] DEBUG c.l.e.d.c.f.DefaultFilesDataUnit - Computing size ... done
+2018-05-07 20:36:20,958 [Files to RDF] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/24
+2018-05-07 20:36:20,958 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/24
+2018-05-07 20:36:21,035 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/36
+2018-05-07 20:36:21,038 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/70
+2018-05-07 20:36:21,038 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/72
+2018-05-07 20:36:21,065 [Files filter] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/36
+2018-05-07 20:36:21,065 [Files filter] DEBUG c.l.p.t.f.FilesFilter - Pattern: package-url.jsonld
+2018-05-07 20:36:21,065 [Files filter] DEBUG c.l.p.t.f.FilesFilter - Entry: package-url.jsonld : true
+2018-05-07 20:36:21,065 [Files filter] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/36
+2018-05-07 20:36:21,066 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/36
+2018-05-07 20:36:21,094 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/33
+2018-05-07 20:36:21,097 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/100
+2018-05-07 20:36:21,097 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/101
+2018-05-07 20:36:21,111 [Graph merger] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/33
+2018-05-07 20:36:21,114 [Graph merger] INFO  c.l.p.t.g.GraphMerger - Copy: http://localhost:8181/resources/pipelines/created-1497599817206/blank/130/0 -> http://localhost:8181/resources/pipelines/created-1497599817206/blank/100
+2018-05-07 20:36:21,532 [Graph merger] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/33
+2018-05-07 20:36:21,532 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/33
+2018-05-07 20:36:21,684 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/61
+2018-05-07 20:36:21,687 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/125
+2018-05-07 20:36:21,687 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/126
+2018-05-07 20:36:21,694 [Files to RDF] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/61
+2018-05-07 20:36:21,694 [Files to RDF] DEBUG c.l.e.d.c.f.DefaultFilesDataUnit - Computing size ...
+2018-05-07 20:36:21,694 [Files to RDF] DEBUG c.l.e.d.c.f.DefaultFilesDataUnit - Computing size ... done
+2018-05-07 20:36:21,708 [Files to RDF] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/61
+2018-05-07 20:36:21,708 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/61
+2018-05-07 20:36:21,719 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/37
+2018-05-07 20:36:21,722 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/145
+2018-05-07 20:36:21,722 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/146
+2018-05-07 20:36:21,730 [Graph merger] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/37
+2018-05-07 20:36:21,733 [Graph merger] INFO  c.l.p.t.g.GraphMerger - Copy: http://localhost:8181/resources/pipelines/created-1497599817206/blank/126/0 -> http://localhost:8181/resources/pipelines/created-1497599817206/blank/145
+2018-05-07 20:36:21,750 [Graph merger] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/37
+2018-05-07 20:36:21,750 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/37
+2018-05-07 20:36:21,764 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/39
+2018-05-07 20:36:21,767 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/155
+2018-05-07 20:36:21,767 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/156
+2018-05-07 20:36:21,778 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/159
+2018-05-07 20:36:21,778 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - Initializing MemoryStore...
+2018-05-07 20:36:21,778 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - MemoryStore initialized
+2018-05-07 20:36:21,787 [extract urls] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/39
+2018-05-07 20:36:21,787 [extract urls] DEBUG c.l.p.t.s.c.SparqlConstruct - Query: PREFIX httpList: <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fdp: <http://schemas.frictionlessdata.io/fiscal-data-package#>
+PREFIX fcsv: <file://budget.csv#>
+PREFIX obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> 
+PREFIX obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/> 
+PREFIX obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> 
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX datasets: <http://data.openbudgets.eu/datasets/>
+PREFIX fdprdf: <http://data.openbudgets.eu/fdptordf#>
+PREFIX schema: <http://schema.org/>
+
+INSERT {
+	<http://localhost/resource/configuration> a httpList:Configuration ;
+	    httpList:reference ?reference .
+	
+	?reference  a httpList:Reference ;
+	    httpList:fileUri ?packageUrl ;
+	    httpList:fileName ?fileName.
+
+fdprdf:metadata fdprdf:packageUrlBase ?packageUrlBase .
+}
+WHERE {
+	[] schema:url ?packageUrl .
+              
+    BIND("datapackage.jsonld" AS ?fileName)
+    BIND(URI(CONCAT("http://data.openbudgets.eu/fileReference/", ?fileName)) AS ?reference)
+
+    BIND(REPLACE(str(?packageUrl), "\\/[^\\/]*$","/") AS ?packageUrlBase)
+      
+}
+2018-05-07 20:36:21,787 [extract urls] DEBUG c.l.p.t.s.c.SparqlConstruct - http://localhost:8181/resources/pipelines/created-1497599817206/blank/156 -> http://localhost:8181/resources/pipelines/created-1497599817206/blank/159
+2018-05-07 20:36:21,795 [extract urls] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/39
+2018-05-07 20:36:21,795 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/39
+2018-05-07 20:36:21,811 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/59
+2018-05-07 20:36:21,814 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/15
+2018-05-07 20:36:21,827 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/28
+2018-05-07 20:36:21,827 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - Initializing MemoryStore...
+2018-05-07 20:36:21,827 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - MemoryStore initialized
+2018-05-07 20:36:21,845 [HTTP get list] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/59
+2018-05-07 20:36:21,845 [HTTP get list] WARN  c.l.p.e.h.HttpGetFiles - 'Trust all certs' policy used -> security risk!
+2018-05-07 20:36:21,850 [pool-14-thread-1] DEBUG c.l.p.e.h.UriDownloader - Downloading 1/1 : http://datastore.openspending.org/5537104a902b0847bb7b474225eced5a/third_test/final/datapackage.json
+2018-05-07 20:36:22,060 [pool-14-thread-1] DEBUG c.l.p.e.h.UriDownloader - Downloading of: http://datastore.openspending.org/5537104a902b0847bb7b474225eced5a/third_test/final/datapackage.json takes: 210 ms
+2018-05-07 20:36:22,068 [HTTP get list] INFO  c.l.p.e.h.HttpGetFiles - Downloaded 1/1
+2018-05-07 20:36:22,068 [HTTP get list] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/59
+2018-05-07 20:36:22,068 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/59
+2018-05-07 20:36:22,088 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/13
+2018-05-07 20:36:22,091 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/149
+2018-05-07 20:36:22,091 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/150
+2018-05-07 20:36:22,098 [Files to RDF] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/13
+2018-05-07 20:36:22,098 [Files to RDF] DEBUG c.l.e.d.c.f.DefaultFilesDataUnit - Computing size ...
+2018-05-07 20:36:22,098 [Files to RDF] DEBUG c.l.e.d.c.f.DefaultFilesDataUnit - Computing size ... done
+2018-05-07 20:36:22,477 [Files to RDF] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/13
+2018-05-07 20:36:22,477 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/13
+2018-05-07 20:36:22,494 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/14
+2018-05-07 20:36:22,498 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/81
+2018-05-07 20:36:22,498 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/83
+2018-05-07 20:36:22,506 [Graph merger] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/14
+2018-05-07 20:36:22,510 [Graph merger] INFO  c.l.p.t.g.GraphMerger - Copy: http://localhost:8181/resources/pipelines/created-1497599817206/blank/149/0 -> http://localhost:8181/resources/pipelines/created-1497599817206/blank/81
+2018-05-07 20:36:22,531 [Graph merger] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/14
+2018-05-07 20:36:22,532 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/14
+2018-05-07 20:36:22,550 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/41
+2018-05-07 20:36:22,554 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/135
+2018-05-07 20:36:22,554 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/136
+2018-05-07 20:36:22,554 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/138
+2018-05-07 20:36:22,568 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - Initializing MemoryStore...
+2018-05-07 20:36:22,568 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - MemoryStore initialized
+2018-05-07 20:36:22,576 [extract DSD] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/41
+2018-05-07 20:36:22,576 [extract DSD] DEBUG c.l.p.t.s.c.SparqlConstruct - Query: PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fdp: <http://schemas.frictionlessdata.io/fiscal-data-package#>
+PREFIX fcsv: <file://budget.csv#>
+PREFIX obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> 
+PREFIX obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/> 
+PREFIX obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> 
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX datasets: <http://data.openbudgets.eu/datasets/>
+PREFIX fdprdf: <http://data.openbudgets.eu/fdptordf#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+
+
+INSERT {
+    ?dsd a qb:DataStructureDefinition;
+         qb:component [ qb:attribute obeu-attribute:currency ] ;
+    	qb:component [ qb:measure obeu-measure:amount ] .
+                        
+   ?dataset a qb:DataSet;
+      fdprdf:datasetShortName ?packageName ;
+      qb:structure ?dsd ;
+      dcterms:title ?packageTitle ;
+      rdfs:label ?packageTitle ;
+      dcat:contactPoint ?authorAgent;
+      dcterms:publisher ?authorAgent;
+      dcterms:description ?description;
+      rdfs:comment ?description;
+      dcterms:license ?license .
+  
+  ?authorAgent foaf:name ?author;
+    vcard:fn ?author.
+  
+   fdprdf:metadata fdprdf:datasetShortName ?packageName .          
+   
+   ?fiscalPeriodInterval time:hasBeginning ?fiscalPeriodStart;
+   						time:hasEnd ?fiscalPeriodEnd .   
+   ?dataset obeu-dimension:fiscalPeriod ?fiscalPeriodInterval .
+   ?dsd qb:component ?fiscalPeriodComponent .
+   ?fiscalPeriodComponent qb:dimension obeu-dimension:fiscalPeriod;
+   					   qb:componentAttachment qb:DataSet  .
+}
+WHERE {
+    ?desc fdp:name ?packageName ;
+    	  fdp:model ?model .
+  
+  OPTIONAL {?desc fdp:title ?packageTitleNice . FILTER (?packageTitleNice != "") }
+  OPTIONAL {?desc fdp:license ?license .}
+  OPTIONAL {?desc fdp:description ?description . FILTER (?description != "") }
+  OPTIONAL {
+    ?desc fdp:author ?author .
+    BIND (URI(CONCAT("http://data.openbudgets.eu/resource/agent/", encode_for_uri(?author))) as ?authorAgent)
+  }
+  
+  BIND(COALESCE(?packageTitleNice, ?packageName) AS ?packageTitle)
+      
+  OPTIONAL {
+    	?desc fdp:fiscalPeriod [ fdp:start ?startDateLiteral;
+    								   fdp:end ?endDateLiteral ] .
+ 		BIND (URI(CONCAT("http://data.openbudgets.eu/resource/interval/", ?startDateLiteral, "--", ?endDateLiteral)) AS ?fiscalPeriodInterval)
+ 		BIND (URI(CONCAT("http://reference.data.gov.uk/id/gregorian-instant/",?startDateLiteral,"T00:00:00")) AS ?fiscalPeriodStart)
+ 		BIND (URI(CONCAT("http://reference.data.gov.uk/id/gregorian-instant/",?endDateLiteral,"T00:00:00")) AS ?fiscalPeriodEnd)
+		BIND(URI(CONCAT("http://data.openbudgets.eu/ontology/dsd/",?packageName, "/component/fiscalPeriod")) AS ?fiscalPeriodComponent)  
+  }
+    								   
+  BIND(URI(CONCAT("http://data.openbudgets.eu/resource/dataset/",?packageName)) AS ?dataset)
+  BIND(URI(CONCAT("http://data.openbudgets.eu/ontology/dsd/",?packageName)) AS ?dsd)      
+  
+}
+2018-05-07 20:36:22,576 [extract DSD] DEBUG c.l.p.t.s.c.SparqlConstruct - http://localhost:8181/resources/pipelines/created-1497599817206/blank/138 -> http://localhost:8181/resources/pipelines/created-1497599817206/blank/135
+2018-05-07 20:36:22,582 [extract DSD] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/41
+2018-05-07 20:36:22,583 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/41
+2018-05-07 20:36:22,618 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/7
+2018-05-07 20:36:22,622 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/129
+2018-05-07 20:36:22,622 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/131
+2018-05-07 20:36:23,073 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/141
+2018-05-07 20:36:23,073 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - Initializing MemoryStore...
+2018-05-07 20:36:23,073 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - MemoryStore initialized
+2018-05-07 20:36:23,082 [annotate related countries] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/7
+2018-05-07 20:36:23,082 [annotate related countries] DEBUG c.l.p.t.s.c.SparqlConstruct - Query: PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fdp: <http://schemas.frictionlessdata.io/fiscal-data-package#>
+PREFIX fcsv: <file://budget.csv#>
+PREFIX obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> 
+PREFIX obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/> 
+PREFIX obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> 
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX datasets: <http://data.openbudgets.eu/datasets/>
+PREFIX fdprdf: <http://data.openbudgets.eu/fdptordf#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+
+INSERT {
+                        
+  ?dataset dcterms:spatial ?country.
+}
+WHERE {
+  
+  VALUES (?nuts ?iso) { ("uk" "gb") ("el" "gr") }
+  
+    ?desc fdp:name ?packageName ;
+          fdp:countryCode ?fdpCountryCode ;
+    	  fdp:model ?model .
+  
+  ?country skos:notation ?skosCountryCode .
+  
+      FILTER(REGEX(?fdpCountryCode, ?skosCountryCode, "i") || ( REGEX(?iso, ?fdpCountryCode, "i") && REGEX(?nuts, ?skosCountryCode, "i") ) )
+    								   
+  BIND(URI(CONCAT("http://data.openbudgets.eu/resource/dataset/",?packageName)) AS ?dataset)
+  
+}
+2018-05-07 20:36:23,082 [annotate related countries] DEBUG c.l.p.t.s.c.SparqlConstruct - http://localhost:8181/resources/pipelines/created-1497599817206/blank/131 -> http://localhost:8181/resources/pipelines/created-1497599817206/blank/141
+2018-05-07 20:36:23,083 [annotate related countries] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/7
+2018-05-07 20:36:23,083 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/7
+2018-05-07 20:36:23,167 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/16
+2018-05-07 20:36:23,171 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/39
+2018-05-07 20:36:23,171 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/40
+2018-05-07 20:36:23,171 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/48
+2018-05-07 20:36:23,199 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - Initializing MemoryStore...
+2018-05-07 20:36:23,199 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - MemoryStore initialized
+2018-05-07 20:36:23,206 [create CSV file list] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/16
+2018-05-07 20:36:23,207 [create CSV file list] DEBUG c.l.p.t.s.c.SparqlConstruct - Query: PREFIX httpList: <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fdp: <http://schemas.frictionlessdata.io/fiscal-data-package#>
+PREFIX fcsv: <file://budget.csv#>
+PREFIX obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> 
+PREFIX obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/> 
+PREFIX obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> 
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX datasets: <http://data.openbudgets.eu/datasets/>
+PREFIX fdprdf: <http://data.openbudgets.eu/fdptordf#>
+
+INSERT {
+	<http://localhost/resource/configuration> a httpList:Configuration ;
+	    httpList:reference ?reference .
+	
+	?reference  a httpList:Reference ;
+	    httpList:fileUri ?filePath;
+	    httpList:fileName ?resourceName.
+}
+WHERE {
+    OPTIONAL{fdprdf:metadata fdprdf:packageUrlBase ?definedBaseUrl .}
+    BIND(COALESCE(?definedBaseUrl, "") AS ?baseUrl)
+	?desc fdp:resources ?resource .
+    ?resource fdp:name ?resourceName;
+              fdp:path ?resourcePath.
+              
+    BIND(IF(REGEX(?resourcePath, "^(ht|f)tps?://.*$"), ?resourcePath, CONCAT(?baseUrl, ENCODE_FOR_URI(?resourcePath))) AS ?filePath)
+    BIND(URI(CONCAT("http://data.openbudgets.eu/fileReference/", ?resourceName)) AS ?reference)
+}
+2018-05-07 20:36:23,207 [create CSV file list] DEBUG c.l.p.t.s.c.SparqlConstruct - http://localhost:8181/resources/pipelines/created-1497599817206/blank/48 -> http://localhost:8181/resources/pipelines/created-1497599817206/blank/39
+2018-05-07 20:36:23,211 [create CSV file list] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/16
+2018-05-07 20:36:23,211 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/16
+2018-05-07 20:36:23,230 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/63
+2018-05-07 20:36:23,235 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/122
+2018-05-07 20:36:23,235 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/123
+2018-05-07 20:36:23,250 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - Initializing MemoryStore...
+2018-05-07 20:36:23,250 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - MemoryStore initialized
+2018-05-07 20:36:23,269 [HTTP get list] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/63
+2018-05-07 20:36:23,269 [HTTP get list] WARN  c.l.p.e.h.HttpGetFiles - 'Trust all certs' policy used -> security risk!
+2018-05-07 20:36:23,274 [pool-15-thread-1] DEBUG c.l.p.e.h.UriDownloader - Downloading 1/2 : http://datastore.openspending.org/5537104a902b0847bb7b474225eced5a/third_test/final/data%2Fopenbudget_merzenich_plan_2017-copy.csv
+2018-05-07 20:36:23,906 [pool-15-thread-1] DEBUG c.l.p.e.h.UriDownloader - Downloading of: http://datastore.openspending.org/5537104a902b0847bb7b474225eced5a/third_test/final/data%2Fopenbudget_merzenich_plan_2017-copy.csv takes: 632 ms
+2018-05-07 20:36:23,911 [pool-15-thread-1] DEBUG c.l.p.e.h.UriDownloader - Downloading 2/2 : http://datastore.openspending.org/5537104a902b0847bb7b474225eced5a/third_test/final/data%2Fopenbudget_merzenich_plan_2017-copy__2017.csv
+2018-05-07 20:36:24,279 [pool-15-thread-1] DEBUG c.l.p.e.h.UriDownloader - Downloading of: http://datastore.openspending.org/5537104a902b0847bb7b474225eced5a/third_test/final/data%2Fopenbudget_merzenich_plan_2017-copy__2017.csv takes: 368 ms
+2018-05-07 20:36:24,329 [HTTP get list] INFO  c.l.p.e.h.HttpGetFiles - Downloaded 2/2
+2018-05-07 20:36:24,329 [HTTP get list] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/63
+2018-05-07 20:36:24,329 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/63
+2018-05-07 20:36:24,351 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/components/42e517c4-2a13-499a-a5e2-1ca633a1b498
+2018-05-07 20:36:24,367 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/30
+2018-05-07 20:36:24,367 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/31
+2018-05-07 20:36:24,367 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/33
+2018-05-07 20:36:24,381 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - Initializing MemoryStore...
+2018-05-07 20:36:24,381 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - MemoryStore initialized
+2018-05-07 20:36:24,387 [Add result download url] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/components/42e517c4-2a13-499a-a5e2-1ca633a1b498
+2018-05-07 20:36:24,388 [Add result download url] DEBUG c.l.p.t.s.c.SparqlConstruct - Query: PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fdp: <http://schemas.frictionlessdata.io/fiscal-data-package#>
+PREFIX fcsv: <file://budget.csv#>
+PREFIX obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> 
+PREFIX obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/> 
+PREFIX obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> 
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX datasets: <http://data.openbudgets.eu/datasets/>
+PREFIX fdprdf: <http://data.openbudgets.eu/fdptordf#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+
+
+INSERT {
+    ?dataset dcat:distribution ?distribution .
+    ?distribution a dcat:Distribution;
+  			dcat:accessURL ?dumpUrl ;
+    		dcat:downloadURL ?dumpUrl .
+}
+WHERE {
+  ?dataset a qb:DataSet;
+           fdprdf:datasetShortName ?packageName .
+      
+  BIND( URI(CONCAT("http://apps.openbudgets.eu/dumps/fromfdp/", ?packageName, ".nt")) AS ?dumpUrl) 
+  BIND( URI(CONCAT(str(?dataset), "/distribution")) AS ?distribution)
+}
+2018-05-07 20:36:24,388 [Add result download url] DEBUG c.l.p.t.s.c.SparqlConstruct - http://localhost:8181/resources/pipelines/created-1497599817206/blank/33 -> http://localhost:8181/resources/pipelines/created-1497599817206/blank/30
+2018-05-07 20:36:24,391 [Add result download url] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/components/42e517c4-2a13-499a-a5e2-1ca633a1b498
+2018-05-07 20:36:24,391 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/components/42e517c4-2a13-499a-a5e2-1ca633a1b498
+2018-05-07 20:36:24,415 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/26
+2018-05-07 20:36:24,419 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/29
+2018-05-07 20:36:24,419 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/32
+2018-05-07 20:36:24,419 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/34
+2018-05-07 20:36:24,455 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - Initializing MemoryStore...
+2018-05-07 20:36:24,455 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - MemoryStore initialized
+2018-05-07 20:36:24,463 [extract measures] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/26
+2018-05-07 20:36:24,463 [extract measures] DEBUG c.l.p.t.s.c.SparqlConstruct - Query: PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fdp: <http://schemas.frictionlessdata.io/fiscal-data-package#>
+PREFIX fcsv: <file://budget.csv#>
+PREFIX obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> 
+PREFIX obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/> 
+PREFIX obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> 
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX datasets: <http://data.openbudgets.eu/datasets/>
+PREFIX fdprdf: <http://data.openbudgets.eu/fdptordf#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX obeu-operation:   <http://data.openbudgets.eu/resource/codelist/operation-character/> 
+PREFIX obeu-budgetphase: <http://data.openbudgets.eu/resource/codelist/budget-phase/>
+PREFIX obeu: <http://data.openbudgets.eu/ontology/>
+
+
+INSERT {
+    ?dsd fdprdf:component [ fdprdf:measure ?measureProperty;
+                        fdprdf:source ?measureSource; 
+						fdprdf:sourceColumn ?measureField;
+						fdprdf:sourceFile ?measureResourceName;
+                        fdprdf:factor ?measureFactor;
+                        fdprdf:decimalChar ?decimalChar;
+                        fdprdf:groupChar ?groupChar;
+                        fdprdf:fieldType ?fieldType ] .
+  
+   ?dsd qb:component ?budgetPhaseComponent .
+   ?budgetPhaseComponent qb:dimension obeu-dimension:budgetPhase .
+   
+   ?dsd qb:component ?operationCharacterComponent .
+   ?operationCharacterComponent qb:dimension obeu-dimension:operationCharacter .
+   
+  ?measureProperty ?budgetPhaseAttribute ?budgetPhaseObeu .
+  
+  ?measureProperty ?operationCharacterAttribute ?operationCharacterObeu .
+                        
+   ?measureProperty a fdprdf:MeasureProperty ;
+      				fdprdf:currency ?currencyUri ;
+    				fdprdf:name ?measureName ;
+    				fdprdf:isMeasure true .
+}
+WHERE {
+    ?desc fdp:name ?packageName;
+    	  fdp:resources ?resource;
+    	  fdp:model ?model .
+    ?resource fdp:name ?measureResourceName;
+              fdp:schema [ fdp:fields ?resourceField ] .
+    ?resourceField fdp:name ?measureField .
+	OPTIONAL{?resourceField fdp:type ?fieldType .}
+	OPTIONAL{?resourceField fdp:format ?fieldFormat .}
+  OPTIONAL{?resourceField fdp:decimalChar ?decimalChar.}
+  OPTIONAL{?resourceField fdp:groupChar ?groupChar.}
+	  
+	?model fdp:measures ?measures .
+	  
+	?measures ?measureAttr ?measure .
+	?measure fdp:source ?measureField;
+	  
+	fdp:currency ?measureCurrency .
+	
+	OPTIONAL {?measure fdp:factor ?definedMeasureFactor . }
+     
+  OPTIONAL {
+    VALUES (?fdpPhase ?budgetPhaseObeu) {
+      ("proposed" obeu-budgetphase:draft)
+      ("approved" obeu-budgetphase:approved)
+      ("adjusted" obeu-budgetphase:revised)
+      ("executed" obeu-budgetphase:executed)
+    }
+    ?measure fdp:phase ?fdpPhase .
+    BIND(fdprdf:budgetPhase AS ?budgetPhaseAttribute)
+    BIND(qb:Observation AS ?budgetPhaseAttachment)
+  	BIND(URI(CONCAT("http://data.openbudgets.eu/ontology/dsd/",?packageName, "/component/budgetPhase")) AS ?budgetPhaseComponent)   
+  }
+    
+  OPTIONAL {
+    VALUES (?fdpDirection ?operationCharacterObeu) {
+      ("expenditure" obeu-operation:expenditure)
+      ("revenue" obeu-operation:revenue)
+    }
+    ?measure fdp:direction ?fdpDirection .
+    BIND(fdprdf:operationCharacter AS ?operationCharacterAttribute)
+    BIND(qb:Observation AS ?operationCharacterAttachment)
+  	BIND(URI(CONCAT("http://data.openbudgets.eu/ontology/dsd/",?packageName, "/component/operationCharacter")) AS ?operationCharacterComponent)   
+  }
+	
+	BIND(COALESCE(?definedMeasureFactor, 1.0) AS ?measureFactor)
+	
+	OPTIONAL {?measure fdp:resource ?explicitMeasureResource .}			   
+    
+    FILTER(IF(BOUND(?explicitMeasureResource), ?explicitMeasureResource = ?measureResourceName, TRUE))
+    
+    BIND(IF(BOUND(?explicitMeasureResource), ?explicitMeasureResource, ?measureResourceName) AS ?measureResourceNameInPath)	
+    
+    BIND(strafter(str(?measureAttr), "#") AS ?measureName)
+    BIND(URI(CONCAT("http://data.openbudgets.eu/ontology/dsd/", ?packageName ,"/measure/", ?measureName)) AS ?measureProperty)
+   
+    BIND(URI(CONCAT("file://",?measureResourceNameInPath,"#",REPLACE(ENCODE_FOR_URI(?measureField), "%20","+"))) AS ?measureSource) 
+    BIND(URI(CONCAT("http://data.openbudgets.eu/codelist/currency/",?measureCurrency)) AS ?currencyUri)
+    
+  	BIND(URI(CONCAT("http://data.openbudgets.eu/ontology/dsd/",?packageName)) AS ?dsd)      
+}
+2018-05-07 20:36:24,463 [extract measures] DEBUG c.l.p.t.s.c.SparqlConstruct - http://localhost:8181/resources/pipelines/created-1497599817206/blank/34 -> http://localhost:8181/resources/pipelines/created-1497599817206/blank/29
+2018-05-07 20:36:24,466 [extract measures] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/26
+2018-05-07 20:36:24,466 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/26
+2018-05-07 20:36:24,491 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/8
+2018-05-07 20:36:24,496 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/96
+2018-05-07 20:36:24,496 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/97
+2018-05-07 20:36:24,529 [Dataset def and measures] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/8
+2018-05-07 20:36:24,542 [Dataset def and measures] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/8
+2018-05-07 20:36:24,542 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/8
+2018-05-07 20:36:24,562 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/97
+2018-05-07 20:36:24,567 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/127
+2018-05-07 20:36:24,609 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/137
+2018-05-07 20:36:24,609 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/139
+2018-05-07 20:36:24,609 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - Initializing MemoryStore...
+2018-05-07 20:36:24,609 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - MemoryStore initialized
+2018-05-07 20:36:24,628 [define currency as dimension if needed] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/97
+2018-05-07 20:36:24,628 [define currency as dimension if needed] DEBUG c.l.p.t.s.c.SparqlConstruct - Query: PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fdp: <http://schemas.frictionlessdata.io/fiscal-data-package#>
+PREFIX fcsv: <file://budget.csv#>
+PREFIX obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> 
+PREFIX obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/> 
+PREFIX obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> 
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX datasets: <http://data.openbudgets.eu/datasets/>
+PREFIX fdprdf: <http://data.openbudgets.eu/fdptordf#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX obeu-operation:   <http://data.openbudgets.eu/resource/codelist/operation-character/> 
+PREFIX obeu-budgetphase: <http://data.openbudgets.eu/resource/codelist/budget-phase/>
+PREFIX obeu: <http://data.openbudgets.eu/ontology/>
+
+INSERT {
+	?dsd qb:component [ qb:dimension obeu-dimension:currency ] .
+}
+WHERE {
+	?dsd a qb:DataStructureDefinition .
+	{	
+		SELECT ( COUNT( DISTINCT ?currencyUri) AS ?numOfCurrencies ) WHERE {
+			?measureProperty a fdprdf:MeasureProperty ;
+      				fdprdf:currency ?currencyUri .
+      	}
+    }
+    
+    FILTER(?numOfCurrencies > 1)
+}
+2018-05-07 20:36:24,628 [define currency as dimension if needed] DEBUG c.l.p.t.s.c.SparqlConstruct - http://localhost:8181/resources/pipelines/created-1497599817206/blank/127 -> http://localhost:8181/resources/pipelines/created-1497599817206/blank/137
+2018-05-07 20:36:24,629 [define currency as dimension if needed] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/97
+2018-05-07 20:36:24,629 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/97
+2018-05-07 20:36:24,645 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/22
+2018-05-07 20:36:24,653 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/89
+2018-05-07 20:36:24,653 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/90
+2018-05-07 20:36:24,691 [Metadata] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/22
+2018-05-07 20:36:24,710 [Metadata] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/22
+2018-05-07 20:36:24,710 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/22
+2018-05-07 20:36:24,735 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/18
+2018-05-07 20:36:24,740 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/49
+2018-05-07 20:36:24,740 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/51
+2018-05-07 20:36:24,740 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/52
+2018-05-07 20:36:24,758 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - Initializing MemoryStore...
+2018-05-07 20:36:24,758 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - MemoryStore initialized
+2018-05-07 20:36:24,765 [create undescribed dimensions] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/18
+2018-05-07 20:36:24,766 [create undescribed dimensions] DEBUG c.l.p.t.s.c.SparqlConstruct - Query: PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fdp: <http://schemas.frictionlessdata.io/fiscal-data-package#>
+PREFIX fcsv: <file://budget.csv#>
+PREFIX obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> 
+PREFIX obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/> 
+PREFIX obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> 
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX datasets: <http://data.openbudgets.eu/datasets/>
+PREFIX fdprdf: <http://data.openbudgets.eu/fdptordf#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+
+INSERT {
+  ?dsd qb:component [ qb:dimension ?dimensionProperty ;
+  					  fdprdf:valueType fdprdf:unknown ].   
+  ?dimensionProperty a rdf:Property, qb:DimensionProperty;
+                     fdprdf:name ?dimensionName ;
+                     rdfs:label ?dimensionName ;
+  					 rdfs:range owl:Thing .
+}
+WHERE 
+{
+  ?dsd a qb:DataStructureDefinition .
+  
+  ?desc fdp:name ?packageName;
+        fdp:model ?model .
+  
+  ?model fdp:dimensions ?dimensions .
+  
+  ?dimensions ?fdpDimensionProperty ?dimension .
+    
+  FILTER NOT EXISTS {?dimension fdp:dimensionType ?dimensionType .}
+  
+  BIND(ENCODE_FOR_URI(strafter(str(?fdpDimensionProperty), "#")) AS ?dimensionName)
+    
+  BIND(URI(CONCAT("http://data.openbudgets.eu/ontology/dsd/",?packageName,"/dimension/",?dimensionName)) AS ?dimensionProperty)
+}
+2018-05-07 20:36:24,766 [create undescribed dimensions] DEBUG c.l.p.t.s.c.SparqlConstruct - http://localhost:8181/resources/pipelines/created-1497599817206/blank/52 -> http://localhost:8181/resources/pipelines/created-1497599817206/blank/49
+2018-05-07 20:36:24,767 [create undescribed dimensions] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/18
+2018-05-07 20:36:24,767 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/18
+2018-05-07 20:36:24,783 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/components/9cc9b0e5-4633-4e8c-93cc-ee8f141825ae
+2018-05-07 20:36:24,788 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/1
+2018-05-07 20:36:24,788 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/2
+2018-05-07 20:36:24,788 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/3
+2018-05-07 20:36:24,805 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - Initializing MemoryStore...
+2018-05-07 20:36:24,805 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - MemoryStore initialized
+2018-05-07 20:36:24,812 [map named dimensions] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/components/9cc9b0e5-4633-4e8c-93cc-ee8f141825ae
+2018-05-07 20:36:24,812 [map named dimensions] DEBUG c.l.p.t.s.c.SparqlConstruct - Query: PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fdp: <http://schemas.frictionlessdata.io/fiscal-data-package#>
+PREFIX obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> 
+PREFIX obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/> 
+PREFIX obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> 
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX fdprdf: <http://data.openbudgets.eu/fdptordf#>
+PREFIX obeu: <http://data.openbudgets.eu/ontology/> 
+PREFIX org: <http://www.w3.org/ns/org#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX schema: <http://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+
+INSERT {
+  ?dsd qb:component [ qb:dimension ?dimensionProperty;
+                                     fdprdf:valueType ?fdprdfValueType ]. 
+  ?dimensionProperty
+    fdprdf:name ?dimensionName .
+  
+  ?fdpDimensionProperty fdprdf:mappedTo ?dimensionProperty .
+}
+WHERE 
+{
+  VALUES (?fdpDimensionProperty ?fdpDimensionType 	?dimensionProperty				?dimensionName	?fdprdfValueType	) {
+        (fdp:administrator 		"entity"			obeu-dimension:organization		"organization"	fdprdf:organization	)
+        (fdp:supplier	 		"entity"			obeu-dimension:partner			"partner"		fdprdf:organization	)
+       
+  }
+
+  ?dsd a qb:DataStructureDefinition .
+
+  ?desc fdp:name ?packageName;
+        fdp:model ?model .
+
+  ?model fdp:dimensions ?dimensions .
+
+  ?dimensions ?fdpDimensionProperty ?dimension .
+  ?dimension fdp:dimensionType ?fdpDimensionType .    
+
+}
+2018-05-07 20:36:24,812 [map named dimensions] DEBUG c.l.p.t.s.c.SparqlConstruct - http://localhost:8181/resources/pipelines/created-1497599817206/blank/3 -> http://localhost:8181/resources/pipelines/created-1497599817206/blank/1
+2018-05-07 20:36:24,813 [map named dimensions] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/components/9cc9b0e5-4633-4e8c-93cc-ee8f141825ae
+2018-05-07 20:36:24,813 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/components/9cc9b0e5-4633-4e8c-93cc-ee8f141825ae
+2018-05-07 20:36:24,841 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/4
+2018-05-07 20:36:24,855 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/118
+2018-05-07 20:36:24,855 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/119
+2018-05-07 20:36:24,855 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/120
+2018-05-07 20:36:24,874 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - Initializing MemoryStore...
+2018-05-07 20:36:24,874 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - MemoryStore initialized
+2018-05-07 20:36:24,882 [map defined FDP dimensions and attributes] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/4
+2018-05-07 20:36:24,882 [map defined FDP dimensions and attributes] DEBUG c.l.p.t.s.c.SparqlConstruct - Query: PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fdp: <http://schemas.frictionlessdata.io/fiscal-data-package#>
+PREFIX obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> 
+PREFIX obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/> 
+PREFIX obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> 
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX fdprdf: <http://data.openbudgets.eu/fdptordf#>
+PREFIX obeu: <http://data.openbudgets.eu/ontology/> 
+PREFIX org: <http://www.w3.org/ns/org#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX schema: <http://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+
+INSERT {
+  ?dsd qb:component [ ?qbDimensionOrAttribute ?dimensionProperty;
+                                     fdprdf:valueType ?fdprdfValueType ]. 
+  ?dimensionProperty a rdf:Property, ?qbParentProperty, ?extraQbParentProperty ;
+    rdfs:subPropertyOf ?obeuParentProperty ;
+    fdprdf:name ?dimensionName ;
+    rdfs:label ?dimensionName ;
+    rdfs:range ?dimPropRange .
+}
+WHERE 
+{
+  VALUES (?fdpDimensionType ?fdpDimensionSubType 	?obeuParentProperty 					?qbDimensionOrAttribute ?qbParentProperty 		?extraQbParentProperty 	?fdprdfValueType	?dimPropRange) {
+        ("entity" 			UNDEF 				 	obeu-dimension:organization 			qb:dimension 			qb:DimensionProperty 	UNDEF 					fdprdf:organization	org:Organization)
+        ("datetime" 		UNDEF 					obeu-dimension:date 					qb:dimension 			qb:DimensionProperty 	UNDEF 					fdprdf:dateTime		time:Interval)
+        ("location" 		UNDEF 					obeu-attribute:location 				qb:attribute 			qb:AttributeProperty 	UNDEF 					fdprdf:location		schema:Place)
+        ("fact" 			UNDEF 					UNDEF 									qb:componentProperty 	obeu:OptionalProperty 	UNDEF 					fdprdf:fact			owl:Thing	)
+        ("activity" 		UNDEF 					obeu-dimension:programmeClassification 	qb:dimension			qb:DimensionProperty	qb:CodedProperty		fdprdf:skos			skos:Concept			)
+    	("classification"	"functional"			obeu-dimension:functionalClassification	qb:dimension			qb:DimensionProperty	qb:CodedProperty		fdprdf:skos			skos:Concept			)
+    	("classification"	"administrative"		obeu-dimension:administrativeClassification qb:dimension		qb:DimensionProperty	qb:CodedProperty		fdprdf:skos			skos:Concept			)
+    	("classification"	"economic"				obeu-dimension:economicClassification	qb:dimension			qb:DimensionProperty	qb:CodedProperty		fdprdf:skos			skos:Concept			)
+    	("classification"	UNDEF					obeu-dimension:classification			qb:dimension			qb:DimensionProperty	qb:CodedProperty		fdprdf:skos			skos:Concept			)
+    	("other"			UNDEF					UNDEF									qb:dimension			qb:DimensionProperty	UNDEF					fdprdf:unknown		owl:Thing		)
+  }
+
+  ?dsd a qb:DataStructureDefinition .
+
+  ?desc fdp:name ?packageName;
+        fdp:model ?model .
+
+  ?model fdp:dimensions ?dimensions .
+
+  ?dimensions ?fdpDimensionProperty ?dimension .
+  ?dimension fdp:dimensionType ?fdpDimensionType .    
+  
+  OPTIONAL { ?dimension fdp:classificationType ?fdpClassificationType }
+  FILTER(IF(BOUND(?fdpDimensionSubType), ?fdpClassificationType = ?fdpDimensionSubType, !EXISTS {?dimension fdp:classificationType ?something}))
+
+  BIND(ENCODE_FOR_URI(strafter(str(?fdpDimensionProperty), "#")) AS ?dimensionName)
+
+  BIND(URI(CONCAT("http://data.openbudgets.eu/ontology/dsd/",?packageName,"/dimension/",?dimensionName)) AS ?dimensionProperty)
+}
+2018-05-07 20:36:24,882 [map defined FDP dimensions and attributes] DEBUG c.l.p.t.s.c.SparqlConstruct - http://localhost:8181/resources/pipelines/created-1497599817206/blank/120 -> http://localhost:8181/resources/pipelines/created-1497599817206/blank/118
+2018-05-07 20:36:24,889 [map defined FDP dimensions and attributes] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/4
+2018-05-07 20:36:24,889 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/4
+2018-05-07 20:36:24,911 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/5
+2018-05-07 20:36:24,916 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/115
+2018-05-07 20:36:24,934 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/116
+2018-05-07 20:36:24,941 [Dimensions] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/5
+2018-05-07 20:36:24,955 [Dimensions] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/5
+2018-05-07 20:36:24,955 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/5
+2018-05-07 20:36:24,976 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/2
+2018-05-07 20:36:24,981 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/45
+2018-05-07 20:36:25,013 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/47
+2018-05-07 20:36:25,020 [dimensions and metadata] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/2
+2018-05-07 20:36:25,039 [dimensions and metadata] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/2
+2018-05-07 20:36:25,039 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/2
+2018-05-07 20:36:25,064 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/10
+2018-05-07 20:36:25,069 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/152
+2018-05-07 20:36:25,069 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/153
+2018-05-07 20:36:25,069 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/154
+2018-05-07 20:36:25,088 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - Initializing MemoryStore...
+2018-05-07 20:36:25,088 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - MemoryStore initialized
+2018-05-07 20:36:25,097 [create attributes] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/10
+2018-05-07 20:36:25,097 [create attributes] DEBUG c.l.p.t.s.c.SparqlConstruct - Query: PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fdp: <http://schemas.frictionlessdata.io/fiscal-data-package#>
+PREFIX obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> 
+PREFIX obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/> 
+PREFIX obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> 
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX fdprdf: <http://data.openbudgets.eu/fdptordf#>
+
+
+INSERT {
+    ?component 
+    	fdprdf:attribute [ fdprdf:name ?attributeName;
+                         fdprdf:source ?attributeSource;
+                         fdprdf:iskey ?isKeyAttribute;
+    					           fdprdf:type ?fieldType;
+    						         fdprdf:format ?fieldFormat;
+                         fdprdf:labelfor ?labelfor;
+                         fdprdf:valueProperty ?attributeValueProperty;
+                         fdprdf:parentFDPAttribute ?parentAttribute;
+                         fdprdf:parentDimension ?dimensionProperty;
+                         fdprdf:createdFromFDPAttribute ?someAttribute;
+                         fdprdf:sourceColumn ?attributeField;
+                         fdprdf:sourceFile  ?attributeResourceName;
+                         fdprdf:decimalChar ?decimalChar;
+                         fdprdf:groupChar ?groupChar
+ ] .
+    ?component fdprdf:valueType ?valueType .          
+}
+WHERE {
+  ?dsd a qb:DataStructureDefinition .
+  
+  ?desc fdp:name ?packageName;
+        fdp:title ?packageTitle;
+        fdp:resources ?resource;
+        fdp:model ?model .
+  ?resource fdp:name ?attributeResourceName;
+            fdp:schema [ fdp:fields ?resourceField ] .
+  ?resourceField fdp:name ?attributeField .
+  OPTIONAL{?resourceField fdp:type ?fieldType .}
+  OPTIONAL{?resourceField fdp:decimalChar ?decimalChar.}
+  OPTIONAL{?resourceField fdp:groupChar ?groupChar.}
+  OPTIONAL{?resourceField fdp:format ?fieldFormat .}
+
+  ?model fdp:dimensions ?dimensions .
+
+  ?dimensions ?fdpDimensionProperty ?dimension .
+  ?dimension fdp:attributes [ ?attributeProperty ?someAttribute ] .
+
+  ?someAttribute fdp:source ?attributeField .
+
+  OPTIONAL {?someAttribute fdp:resource ?explicitAttributeResource .}
+  OPTIONAL {
+  	?someAttribute fdp:parent ?parentAttributeName .
+    ?dimension fdp:attributes [ ?parentAttributeProperty ?parentAttribute ] .
+  	BIND(strafter(str(?parentAttributeProperty), "#") AS ?parentAttributeJsonProperty)
+  	FILTER(?parentAttributeJsonProperty = ?parentAttributeName)
+  }
+  OPTIONAL {?someAttribute fdp:constant ?attributeConstVal .} 
+  OPTIONAL {?someAttribute fdp:labelfor ?labelfor .}
+
+  FILTER(IF(BOUND(?explicitAttributeResource), ?explicitAttributeResource = ?attributeResourceName, TRUE))
+    
+  BIND(strafter(str(?attributeProperty), "#") AS ?attributeName)
+  OPTIONAL
+  { 
+    ?dimension fdp:primaryKey ?attributeName .
+    BIND(TRUE AS ?isKeyAttribute)
+  }
+  BIND(COALESCE(?isKeyAttribute, false) AS ?isKeyAttribute)
+  
+  BIND(IF(BOUND(?explicitAttributeResource), ?explicitAttributeResource, ?attributeResourceName) AS ?attributeResourceNameInPath)
+  	
+  BIND(REPLACE(REPLACE(?attributeResourceNameInPath, "^\\s+", ""), "\\s+$", "") AS ?trimmedAttrResource) 
+  BIND(REPLACE(REPLACE(?attributeField, "^\\s+", ""), "\\s+$", "") AS ?trimmedAttributeField)   
+  	
+  BIND(URI(CONCAT("file://",?trimmedAttrResource,"#",REPLACE(REPLACE(ENCODE_FOR_URI(?trimmedAttributeField), "%20","+"), "%2A", "*"))) AS ?attributeSource) 
+  
+  BIND(URI(CONCAT("http://data.openbudgets.eu/ontology/dsd/",?packageName,"/dimension/",ENCODE_FOR_URI(strafter(str(?fdpDimensionProperty), "#")))) AS ?dimensionProperty)
+  
+  VALUES (?componentLink) { (qb:dimension) (qb:attribute) (qb:componentProperty) }
+  ?component ?componentLink ?dimensionProperty .
+  
+  OPTIONAL { ?component fdprdf:valueType ?componentValType . }
+  
+  BIND(IF(BOUND(?parentAttribute), fdprdf:skos, COALESCE(?componentValType,fdprdf:unknown)) AS ?valueType)
+  
+  BIND(URI(CONCAT("http://data.openbudgets.eu/ontology/dsd/",?packageName,"/partialproperty/",ENCODE_FOR_URI(str(?attributeName)))) AS ?attributeValueProperty) 
+  
+}
+2018-05-07 20:36:25,097 [create attributes] DEBUG c.l.p.t.s.c.SparqlConstruct - http://localhost:8181/resources/pipelines/created-1497599817206/blank/154 -> http://localhost:8181/resources/pipelines/created-1497599817206/blank/152
+2018-05-07 20:36:25,115 [create attributes] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/10
+2018-05-07 20:36:25,118 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/10
+2018-05-07 20:36:25,146 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/20
+2018-05-07 20:36:25,151 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/54
+2018-05-07 20:36:25,151 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/55
+2018-05-07 20:36:25,151 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/60
+2018-05-07 20:36:25,173 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - Initializing MemoryStore...
+2018-05-07 20:36:25,173 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - MemoryStore initialized
+2018-05-07 20:36:25,204 [link hierarchical attributes] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/20
+2018-05-07 20:36:25,205 [link hierarchical attributes] DEBUG c.l.p.t.s.c.SparqlConstruct - Query: PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fdp: <http://schemas.frictionlessdata.io/fiscal-data-package#>
+PREFIX fcsv: <file://budget.csv#>
+PREFIX obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> 
+PREFIX obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/> 
+PREFIX obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> 
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX datasets: <http://data.openbudgets.eu/datasets/>
+PREFIX fdprdf: <http://data.openbudgets.eu/fdptordf#>
+
+INSERT {
+  ?attribute fdprdf:parentAttribute ?parentAttribute;
+   			 fdprdf:isHierarchical true .
+  ?parentAttribute fdprdf:isHierarchical true .
+}
+WHERE {
+  ?attribute fdprdf:parentFDPAttribute ?parentFDPAttribute .
+  ?parentAttribute fdprdf:createdFromFDPAttribute ?parentFDPAttribute .
+}
+2018-05-07 20:36:25,205 [link hierarchical attributes] DEBUG c.l.p.t.s.c.SparqlConstruct - http://localhost:8181/resources/pipelines/created-1497599817206/blank/60 -> http://localhost:8181/resources/pipelines/created-1497599817206/blank/54
+2018-05-07 20:36:25,209 [link hierarchical attributes] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/20
+2018-05-07 20:36:25,209 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/20
+2018-05-07 20:36:25,232 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/11
+2018-05-07 20:36:25,238 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/10
+2018-05-07 20:36:25,274 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/6
+2018-05-07 20:36:25,274 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/8
+2018-05-07 20:36:25,274 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - Initializing MemoryStore...
+2018-05-07 20:36:25,274 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - MemoryStore initialized
+2018-05-07 20:36:25,281 [count attributes] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/11
+2018-05-07 20:36:25,281 [count attributes] DEBUG c.l.p.t.s.c.SparqlConstruct - Query: PREFIX fdprdf: <http://data.openbudgets.eu/fdptordf#>
+
+
+INSERT {
+	?component fdprdf:attributeCount ?attrCount .
+}
+WHERE
+{
+    SELECT ?component (COUNT (DISTINCT ?attr) AS ?attrCount) WHERE {
+      ?component fdprdf:attribute ?attr .
+    } GROUP BY ?component
+}
+2018-05-07 20:36:25,281 [count attributes] DEBUG c.l.p.t.s.c.SparqlConstruct - http://localhost:8181/resources/pipelines/created-1497599817206/blank/10 -> http://localhost:8181/resources/pipelines/created-1497599817206/blank/6
+2018-05-07 20:36:25,285 [count attributes] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/11
+2018-05-07 20:36:25,285 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/11
+2018-05-07 20:36:25,309 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/29
+2018-05-07 20:36:25,314 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/142
+2018-05-07 20:36:25,314 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/143
+2018-05-07 20:36:25,395 [all RDF metadata] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/29
+2018-05-07 20:36:25,414 [all RDF metadata] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/29
+2018-05-07 20:36:25,414 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/29
+2018-05-07 20:36:25,438 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/30
+2018-05-07 20:36:25,445 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/41
+2018-05-07 20:36:25,463 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/43
+2018-05-07 20:36:25,463 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/44
+2018-05-07 20:36:25,463 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - Initializing MemoryStore...
+2018-05-07 20:36:25,463 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - MemoryStore initialized
+2018-05-07 20:36:25,471 [filter out annotations] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/30
+2018-05-07 20:36:25,471 [filter out annotations] DEBUG c.l.p.t.s.c.SparqlConstruct - Query: PREFIX fdprdf: <http://data.openbudgets.eu/fdptordf#>
+
+INSERT {
+  ?subject ?predicate ?object .
+}
+WHERE 
+{
+  ?subject ?predicate ?object .
+  FILTER (!(strStarts(str(?predicate), "http://data.openbudgets.eu/fdptordf#")))
+  FILTER (?object != fdprdf:MeasureProperty)
+}
+2018-05-07 20:36:25,471 [filter out annotations] DEBUG c.l.p.t.s.c.SparqlConstruct - http://localhost:8181/resources/pipelines/created-1497599817206/blank/41 -> http://localhost:8181/resources/pipelines/created-1497599817206/blank/43
+2018-05-07 20:36:25,487 [filter out annotations] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/30
+2018-05-07 20:36:25,487 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/30
+2018-05-07 20:36:25,514 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/89
+2018-05-07 20:36:25,520 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/62
+2018-05-07 20:36:25,520 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/64
+2018-05-07 20:36:25,572 [FDP and RDF metadata] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/89
+2018-05-07 20:36:25,598 [FDP and RDF metadata] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/89
+2018-05-07 20:36:25,598 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/89
+2018-05-07 20:36:25,626 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/31
+2018-05-07 20:36:25,635 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/102
+2018-05-07 20:36:25,654 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/109
+2018-05-07 20:36:25,654 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/110
+2018-05-07 20:36:25,654 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - Initializing MemoryStore...
+2018-05-07 20:36:25,654 [asynchExecutor-1] DEBUG o.e.r.s.m.MemoryStore - MemoryStore initialized
+2018-05-07 20:36:25,661 [create graph IRI] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/31
+2018-05-07 20:36:25,661 [create graph IRI] DEBUG c.l.p.t.s.c.SparqlConstruct - Query: PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fdp: <http://schemas.frictionlessdata.io/fiscal-data-package#>
+PREFIX fcsv: <file://budget.csv#>
+PREFIX obeu-attribute:   <http://data.openbudgets.eu/ontology/dsd/attribute/> 
+PREFIX obeu-dimension:   <http://data.openbudgets.eu/ontology/dsd/dimension/> 
+PREFIX obeu-measure:     <http://data.openbudgets.eu/ontology/dsd/measure/> 
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX datasets: <http://data.openbudgets.eu/datasets/>
+PREFIX fdprdf: <http://data.openbudgets.eu/fdptordf#>
+PREFIX graphstore: <http://plugins.linkedpipes.com/ontology/l-graphStoreProtocol#>
+
+
+INSERT {
+  <http://localhost/resources/configuration> a graphstore:Configuration;
+  								graphstore:graph ?graphIRI .
+}
+WHERE 
+{
+   fdprdf:metadata fdprdf:datasetShortName ?datasetName . 
+		
+	BIND(CONCAT("http://data.openbudgets.eu/resource/graph/", ?datasetName) AS ?graphIRI)
+}
+2018-05-07 20:36:25,661 [create graph IRI] DEBUG c.l.p.t.s.c.SparqlConstruct - http://localhost:8181/resources/pipelines/created-1497599817206/blank/102 -> http://localhost:8181/resources/pipelines/created-1497599817206/blank/109
+2018-05-07 20:36:25,664 [create graph IRI] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/31
+2018-05-07 20:36:25,665 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/31
+2018-05-07 20:36:25,689 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/85
+2018-05-07 20:36:25,695 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/5
+2018-05-07 20:36:25,695 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/7
+2018-05-07 20:36:25,723 [RDF to file] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/85
+2018-05-07 20:36:25,806 [RDF to file] INFO  c.l.e.e.e.Execution - Component code end : http://localhost:8181/resources/pipelines/created-1497599817206/85
+2018-05-07 20:36:25,806 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component execution end : http://localhost:8181/resources/pipelines/created-1497599817206/85
+2018-05-07 20:36:25,826 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Component initializing : http://localhost:8181/resources/pipelines/created-1497599817206/52
+2018-05-07 20:36:25,832 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/91
+2018-05-07 20:36:25,832 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/93
+2018-05-07 20:36:25,832 [asynchExecutor-1] DEBUG c.l.e.e.d.DataUnitContainer - load from sources: http://localhost:8181/resources/pipelines/created-1497599817206/blank/94
+2018-05-07 20:36:25,866 [FDP to RDF] INFO  c.l.e.e.e.Execution - Component code start : http://localhost:8181/resources/pipelines/created-1497599817206/52
+2018-05-07 20:36:25,868 [FDP to RDF] INFO  c.l.e.e.e.Execution - Component code failed : http://localhost:8181/resources/pipelines/created-1497599817206/52
+com.linkedpipes.etl.executor.api.v1.LpException: Execution failed.
+	at com.linkedpipes.etl.executor.api.v1.component.SequentialWrap.execute(SequentialWrap.java:46)
+	at com.linkedpipes.etl.executor.component.SequentialComponentExecutor.run(SequentialComponentExecutor.java:34)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.linkedpipes.etl.executor.api.v1.LpException: FdpToRdf-v0.8.0_1:Dataset IRI not found in metadata.
+	at com.linkedpipes.etl.executor.api.v1.service.DefaultExceptionFactory.failure(DefaultExceptionFactory.java:18)
+	at com.linkedpipes.plugin.transformer.fdp.FdpToRdf.extractDataset(FdpToRdf.java:113)
+	at com.linkedpipes.plugin.transformer.fdp.FdpToRdf.execute(FdpToRdf.java:271)
+	at com.linkedpipes.etl.executor.api.v1.component.SequentialWrap.execute(SequentialWrap.java:44)
+	... 2 common frames omitted
+2018-05-07 20:36:25,876 [asynchExecutor-1] ERROR c.l.e.e.e.Execution - Component execution failed : http://localhost:8181/resources/pipelines/created-1497599817206/52
+com.linkedpipes.etl.executor.ExecutorException: Component execution failed.
+	at com.linkedpipes.etl.executor.component.SequentialComponentExecutor.run(SequentialComponentExecutor.java:38)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.linkedpipes.etl.executor.api.v1.LpException: Execution failed.
+	at com.linkedpipes.etl.executor.api.v1.component.SequentialWrap.execute(SequentialWrap.java:46)
+	at com.linkedpipes.etl.executor.component.SequentialComponentExecutor.run(SequentialComponentExecutor.java:34)
+	... 1 common frames omitted
+Caused by: com.linkedpipes.etl.executor.api.v1.LpException: FdpToRdf-v0.8.0_1:Dataset IRI not found in metadata.
+	at com.linkedpipes.etl.executor.api.v1.service.DefaultExceptionFactory.failure(DefaultExceptionFactory.java:18)
+	at com.linkedpipes.plugin.transformer.fdp.FdpToRdf.extractDataset(FdpToRdf.java:113)
+	at com.linkedpipes.plugin.transformer.fdp.FdpToRdf.execute(FdpToRdf.java:271)
+	at com.linkedpipes.etl.executor.api.v1.component.SequentialWrap.execute(SequentialWrap.java:44)
+	... 2 common frames omitted
+2018-05-07 20:36:25,894 [asynchExecutor-1] INFO  c.l.e.d.c.r.RdfDataUnitFactory - Closing repository ... 
+2018-05-07 20:36:25,894 [asynchExecutor-1] DEBUG o.e.r.s.n.NativeStore - Shutting down NativeStore...
+2018-05-07 20:36:25,894 [asynchExecutor-1] DEBUG o.e.r.s.n.NativeStore - NativeStore shut down
+2018-05-07 20:36:25,894 [asynchExecutor-1] DEBUG o.e.r.s.n.NativeStore - NativeStore shut down
+2018-05-07 20:36:25,894 [asynchExecutor-1] INFO  c.l.e.d.c.r.RdfDataUnitFactory - Closing repository ... done
+2018-05-07 20:36:25,894 [asynchExecutor-1] INFO  c.l.e.d.c.r.RdfDataUnitFactory - Deleting content ...
+2018-05-07 20:36:25,896 [asynchExecutor-1] INFO  c.l.e.d.c.r.RdfDataUnitFactory - Deleting content ... done
+2018-05-07 20:36:25,905 [asynchExecutor-1] INFO  c.l.e.e.e.Execution - Pipeline execution begin.
+2018-05-07 20:36:25,918 [asynchExecutor-1] DEBUG o.e.r.s.n.NativeStore - Shutting down NativeStore...
+2018-05-07 20:36:25,918 [asynchExecutor-1] DEBUG o.e.r.s.n.NativeStore - NativeStore shut down
+2018-05-07 20:36:25,918 [asynchExecutor-1] DEBUG o.e.r.s.n.NativeStore - NativeStore shut down

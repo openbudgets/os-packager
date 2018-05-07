@@ -1,9 +1,7 @@
 {
   "@context": "http://schemas.frictionlessdata.io/fiscal-data-package.jsonld",
   "author": "yakun li <liyakun127@gmail.com>",
-  "bytes": 696708,
   "count_of_rows": 5158,
-  "hash": "d2eb43153ebece619c231690d9772e7f",
   "model": {
     "dimensions": {
       "administrative-classification": {
@@ -95,147 +93,20 @@
   },
   "name": "merzenich_level_level_test",
   "owner": "5537104a902b0847bb7b474225eced5a",
-  "profile": "data-package",
-  "profiles": {
-    "fiscal": "*",
-    "tabular": "*"
-  },
   "promise": {},
   "resources": [
     {
       "bytes": 522522,
-      "count_of_rows": 3093,
       "dialect": {
+        "csvddfVersion": 1,
         "delimiter": ",",
-        "doubleQuote": true,
-        "lineTerminator": "\r\n",
-        "quoteChar": "\"",
-        "skipInitialSpace": false
+        "lineTerminator": "\r\n"
       },
-      "dpp:streamedFrom": "/tmp/tmp35d0tx5a/final/data/openbudget_merzenich_plan_2017-copy.csv",
       "encoding": "utf-8",
       "format": "csv",
-      "hash": "098d85b8696d074510d95c0f2d57078d",
       "mediatype": "text/csv",
       "name": "openbudget_merzenich_plan_2017-copy",
-      "path": "data/openbudget_merzenich_plan_2017-copy.csv",
-      "profile": "data-resource",
-      "schema": {
-        "fields": [
-          {
-            "conceptType": "budget-line-id",
-            "format": "default",
-            "name": "id",
-            "osType": "budget-line-id",
-            "slug": "id",
-            "title": "ID",
-            "type": "string"
-          },
-          {
-            "conceptType": "value",
-            "decimalChar": ".",
-            "format": "default",
-            "groupChar": "",
-            "name": "betrag",
-            "osType": "value",
-            "slug": "betrag",
-            "title": "Betrag",
-            "type": "number"
-          },
-          {
-            "conceptType": "direction",
-            "format": "default",
-            "name": "budget_richtung",
-            "osType": "direction",
-            "slug": "budget_richtung",
-            "title": "Budget_Richtung",
-            "type": "string"
-          },
-          {
-            "conceptType": "date",
-            "format": "default",
-            "name": "jahr",
-            "osType": "date:fiscal-year",
-            "slug": "jahr",
-            "title": "Jahr",
-            "type": "integer"
-          },
-          {
-            "conceptType": "direction",
-            "format": "default",
-            "name": "bezeichnung",
-            "osType": "direction",
-            "slug": "bezeichnung",
-            "title": "Bezeichnung",
-            "type": "string"
-          },
-          {
-            "conceptType": "functional-classification",
-            "format": "default",
-            "name": "text",
-            "osType": "functional-classification:generic:level1:code",
-            "slug": "text",
-            "title": "Text",
-            "type": "string"
-          },
-          {
-            "conceptType": "administrative-classification",
-            "format": "default",
-            "name": "produktbereich",
-            "osType": "administrative-classification:generic:level1:code",
-            "slug": "produktbereich",
-            "title": "Produktbereich",
-            "type": "string"
-          },
-          {
-            "conceptType": "administrative-classification",
-            "format": "default",
-            "name": "produktgruppe",
-            "osType": "administrative-classification:generic:level2:code:full",
-            "slug": "produktgruppe",
-            "title": "Produktgruppe",
-            "type": "string"
-          },
-          {
-            "conceptType": "administrative-classification",
-            "format": "default",
-            "name": "kostenart",
-            "osType": "administrative-classification:generic:level3:code:full",
-            "slug": "kostenart",
-            "title": "Kostenart",
-            "type": "string"
-          }
-        ],
-        "primaryKey": [
-          "id",
-          "budget_richtung",
-          "jahr",
-          "bezeichnung",
-          "text",
-          "produktbereich",
-          "produktgruppe",
-          "kostenart"
-        ]
-      }
-    },
-    {
-      "bytes": 348348,
-      "count_of_rows": 2062,
-      "dialect": {
-        "delimiter": ",",
-        "doubleQuote": true,
-        "lineTerminator": "\r\n",
-        "quoteChar": "\"",
-        "skipInitialSpace": false
-      },
-      "dpp:streamedFrom": "/tmp/tmp35d0tx5a/final/data/openbudget_merzenich_plan_2017-copy__2017.csv",
-      "encoding": "utf-8",
-      "format": "csv",
-      "hash": "098d85b8696d074510d95c0f2d57078d",
-      "mediatype": "text/csv",
-      "name": "openbudget_merzenich_plan_2017-copy__2017",
-      "path": "data/openbudget_merzenich_plan_2017-copy__2017.csv",
-      "profile": "data-resource",
+      "path": "openbudget_merzenich_plan_2017-copy.csv",
       "schema": {
         "fields": [
           {

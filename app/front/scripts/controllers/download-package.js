@@ -12,7 +12,9 @@ angular.module('Application')
         $scope.fileName = Configuration.defaultPackageFileName;
         $scope.attributes = PackageService.getAttributes();
         $scope.resources = PackageService.getResources();
+        alert('resources: '+JSON.stringify($scope.resources));
         $scope.fiscalDataPackage = PackageService.createFiscalDataPackage();
+        alert('fiscalDataPackage: '+JSON.stringify($scope.fiscalDataPackage));
         $scope.mappings = DownloadPackageService.generateMappings(
           PackageService.createFiscalDataPackage());
         $scope.login = LoginService;
@@ -59,7 +61,7 @@ angular.module('Application')
           var dataPackageId = ownerId + ":" + packageId;
 
           // set the data package status to "published" (a.k.a. public)
-          osAdminService.togglePackagePublicationStatus(LoginService.permissionToken, {id: dataPackageId}).then(
+          osAdminService.togglePackagePublicationStatus(LoginService.permissionToken, {id: dataPackageId.replace("_", "-")}).then(
             function (res) {
               // run web hooks for the package
               var dataPackage = _.find(packages, {id: dataPackageId});

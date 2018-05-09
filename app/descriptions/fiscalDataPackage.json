@@ -212,7 +212,7 @@
     }
   ],
   "@context": "http://schemas.frictionlessdata.io/fiscal-data-package.jsonld",
-  "owner": "5537104a902b0847bb7b474225eced5a",
-  "author": "yakun li <liyakun127@gmail.com>",
+  "owner": "",
+  "author": "",
   "count_of_rows": 1033
 }

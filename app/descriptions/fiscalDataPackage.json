@@ -50,7 +50,8 @@
           },
           "Text": {
             "source": "Text",
-            "title": "Text"
+            "title": "Text",
+            "parent": "Bezeichnung"
           }
         },
         "classificationType": "functional"
@@ -69,11 +70,13 @@
           },
           "Produktgruppe": {
             "source": "Produktgruppe",
-            "title": "Produktgruppe"
+            "title": "Produktgruppe",
+            "parent": "Produktbereich"
           },
           "Kostenart": {
             "source": "Kostenart",
-            "title": "Kostenart"
+            "title": "Kostenart",
+            "parent": "Produktgruppe"
           }
         },
         "classificationType": "administrative"
@@ -83,32 +86,32 @@
       "Betrag": {
         "source": "Betrag",
         "title": "Betrag",
-        "currency": "EUR",
-        "phase": "approved"
+        "currency": "EUR"
       }
     }
   },
-  "promise": {},
-  "regionCode": "eu",
-  "countryCode": "DE",
-  "title": "merzenich-test1",
-  "name": "merzenich1",
-  "description": "merzenich-test1",
-  "owner": "6c38343baba9d47c1b8efedff36836c4",
-  "author": "Fabrizio Orlandi <fabriziorlandi@gmail.com>",
+  "promise": {
+    "_c": [],
+    "_s": 1,
+    "_d": true,
+    "_h": 0,
+    "_n": false
+  },
+  "title": "merzenich_4th_level_test",
+  "name": "merzenich_4th_level_test",
   "resources": [
     {
       "name": "openbudget_merzenich_plan_2017-copy",
       "format": "csv",
       "path": "OpenBudget_Merzenich_Plan_2017 (copy).csv",
-      "mediatype": "text/csv",
-      "bytes": 169728,
+      "mediatype": "application/vnd.ms-excel",
+      "bytes": 170144,
       "dialect": {
         "csvddfVersion": 1,
         "delimiter": ",",
-        "lineTerminator": "\n"
+        "lineTerminator": "\r\n"
       },
-      "encoding": "utf-8",
+      "encoding": "cp1252",
       "schema": {
         "fields": [
           {
@@ -155,7 +158,7 @@
             "slug": "Bezeichnung",
             "type": "string",
             "format": "default",
-            "osType": "functional-classification:generic:description",
+            "osType": "functional-classification:generic:level1:code",
             "conceptType": "functional-classification"
           },
           {
@@ -164,7 +167,7 @@
             "slug": "Text",
             "type": "string",
             "format": "default",
-            "osType": "functional-classification:generic:description",
+            "osType": "functional-classification:generic:level2:code:full",
             "conceptType": "functional-classification"
           },
           {
@@ -173,7 +176,7 @@
             "slug": "Produktbereich",
             "type": "string",
             "format": "default",
-            "osType": "administrative-classification:generic:level2:description",
+            "osType": "administrative-classification:generic:level1:code",
             "conceptType": "administrative-classification"
           },
           {
@@ -182,7 +185,7 @@
             "slug": "Produktgruppe",
             "type": "string",
             "format": "default",
-            "osType": "administrative-classification:generic:level1:description",
+            "osType": "administrative-classification:generic:level2:code:full",
             "conceptType": "administrative-classification"
           },
           {
@@ -191,18 +194,25 @@
             "slug": "Kostenart",
             "type": "string",
             "format": "default",
-            "osType": "administrative-classification:generic:level3:description",
+            "osType": "administrative-classification:generic:level3:code:full",
             "conceptType": "administrative-classification"
           }
         ],
         "primaryKey": [
           "ID",
           "Budget_Richtung",
-          "Jahr"
+          "Jahr",
+          "Bezeichnung",
+          "Text",
+          "Produktbereich",
+          "Produktgruppe",
+          "Kostenart"
         ]
       }
     }
   ],
   "@context": "http://schemas.frictionlessdata.io/fiscal-data-package.jsonld",
-  "count_of_rows": 0
+  "owner": "5537104a902b0847bb7b474225eced5a",
+  "author": "yakun li <liyakun127@gmail.com>",
+  "count_of_rows": 1033
 }

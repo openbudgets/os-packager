@@ -97,7 +97,31 @@ function validateDataPackage(descriptor, schema) {
 }
 
 function createFiscalDataPackage(attributes, resources) {
-  return require('../descriptions/fiscalDataPackage.json');
+  var fiscalData = require('../descriptions/fiscalDataPackage.json');
+  _.extend(fiscalData, utils.removeEmptyAttributes(attributes));
+  _.map(resources, function(resource) {
+    fiscalData.resources[0].name = resource.name;
+    fiscalData.resources[0].format = 'csv';
+    if (resource.source.url) {
+      fiscalData.resources[0].url = resource.source.url;
+    } else {
+      fiscalData.resources[0].path = resource.source.fileName || resource.name + '.csv';
+    }
+    if (resource.source.mimeType) {
+      fiscalData.resources[0].mediatype = resource.source.mimeType;
+    }
+    if (resource.source.size) {
+      fiscalData.resources[0].bytes = resource.source.size;
+    }
+    if (resource.dialect) {
+      fiscalData.resources[0].dialect = _.clone(resource.dialect);
+    }
+    if (resource.encoding) {
+      fiscalData.resources[0].encoding = resource.encoding;
+    }
+  });
+
+  return fiscalData
 }
 
 function convertResource(resource, dataPackage, dataPackageUrl) {

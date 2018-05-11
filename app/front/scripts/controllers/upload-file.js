@@ -1,6 +1,7 @@
 'use strict';
 
 var _ = require('lodash');
+var fs = require('fs');
 
 angular.module('Application')
   .controller('UploadFileController', [
@@ -39,12 +40,20 @@ angular.module('Application')
         });
 
         $scope.onFileSelected = function() {
+          //// TODO: Use csv tools to get rid of qoutes and the comma inside the column
           var file = _.first(this.files);
-          $scope.model.file = file.name;
-          $scope.resetFromCurrentStep();
-          $scope.state = UploadFileService.resourceChanged(file, null);
-          $scope.isFileSelected = $scope.state.isFile;
-          $scope.isUrlSelected = false;
+          var read = new FileReader();
+          read.readAsBinaryString(file);
+          read.onloadend = function(){
+              var name = file.name;
+              var lines = read.result.replace(/['"]+/g, '');
+              //console.log(lines);
+              $scope.model.file = file.name;
+              $scope.resetFromCurrentStep();
+              $scope.state = UploadFileService.resourceChanged(new File([lines],file.name), null);
+              $scope.isFileSelected = $scope.state.isFile;
+              $scope.isUrlSelected = false;
+          }
         };
 
         $scope.onClearSelectedResource = function() {

@@ -1,7 +1,7 @@
 'use strict';
 
 var _ = require('lodash');
-var fs = require('fs');
+var Papa = require('papaparse');
 
 angular.module('Application')
   .controller('UploadFileController', [
@@ -40,20 +40,23 @@ angular.module('Application')
         });
 
         $scope.onFileSelected = function() {
-          //// TODO: Use csv tools to get rid of qoutes and the comma inside the column
           var file = _.first(this.files);
-          var read = new FileReader();
-          read.readAsBinaryString(file);
-          read.onloadend = function(){
-              var name = file.name;
-              var lines = read.result.replace(/['"]+/g, '');
-              //console.log(lines);
-              $scope.model.file = file.name;
-              $scope.resetFromCurrentStep();
-              $scope.state = UploadFileService.resourceChanged(new File([lines],file.name), null);
-              $scope.isFileSelected = $scope.state.isFile;
-              $scope.isUrlSelected = false;
-          }
+          var name = file.name;
+          Papa.parse(file, {
+              complete: function(results){
+                for (var i=1; i<results.data.length; i++){
+                    for (var j=0; j<results.data[i].length; j++){
+                      var result = results.data[i][j].replace(/['",]+/g, '');
+                      results.data[i][j] = result;
+                    }
+                }
+                $scope.model.file = file.name;
+                $scope.resetFromCurrentStep();
+                $scope.state = UploadFileService.resourceChanged(new File([Papa.unparse(results)], file.name), null);
+                $scope.isFileSelected = $scope.state.isFile;
+                $scope.isUrlSelected = false;
+              }
+          });
         };
 
         $scope.onClearSelectedResource = function() {

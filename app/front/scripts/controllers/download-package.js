@@ -59,7 +59,7 @@ angular.module('Application')
           var dataPackageId = ownerId + ":" + packageId;
 
           // set the data package status to "published" (a.k.a. public)
-          osAdminService.togglePackagePublicationStatus(LoginService.permissionToken, {id: dataPackageId.replace("_", "-")}).then(
+          osAdminService.togglePackagePublicationStatus(LoginService.permissionToken, {id: dataPackageId}).then(
             function (res) {
               // run web hooks for the package
               var dataPackage = _.find(packages, {id: dataPackageId});

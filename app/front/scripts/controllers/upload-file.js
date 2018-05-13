@@ -41,7 +41,6 @@ angular.module('Application')
 
         $scope.onFileSelected = function() {
           var file = _.first(this.files);
-          var name = file.name;
           Papa.parse(file, {
               complete: function(results){
                 for (var i=1; i<results.data.length; i++){

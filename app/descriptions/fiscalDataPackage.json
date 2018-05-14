@@ -1,7 +1,7 @@
 {
   "model": {
     "dimensions": {
-      "administrative-classification": {
+      "functional-classification": {
         "dimensionType": "classification",
         "primaryKey": [
           "Produktbereich",
@@ -36,7 +36,7 @@
             "parent": "Produktgruppe"
           }
         },
-        "classificationType": "administrative"
+        "classificationType": "functional"
       },
       "date": {
         "dimensionType": "datetime",
@@ -107,8 +107,8 @@
             "slug": "Bezeichnung",
             "type": "string",
             "format": "default",
-            "osType": "administrative-classification:generic:level4:code:full",
-            "conceptType": "administrative-classification"
+            "osType": "functional-classification:generic:level4:code:full",
+            "conceptType": "functional-classification"
           },
           {
             "title": "Text",
@@ -116,8 +116,8 @@
             "slug": "Text",
             "type": "string",
             "format": "default",
-            "osType": "administrative-classification:generic:level5:code:full",
-            "conceptType": "administrative-classification"
+            "osType": "functional-classification:generic:level5:code:full",
+            "conceptType": "functional-classification"
           },
           {
             "title": "Jahr",
@@ -134,8 +134,8 @@
             "slug": "Produktbereich",
             "type": "string",
             "format": "default",
-            "osType": "administrative-classification:generic:level1:code",
-            "conceptType": "administrative-classification"
+            "osType": "functional-classification:generic:level1:code",
+            "conceptType": "functional-classification"
           },
           {
             "title": "Produktgruppe",
@@ -143,8 +143,8 @@
             "slug": "Produktgruppe",
             "type": "string",
             "format": "default",
-            "osType": "administrative-classification:generic:level2:code:full",
-            "conceptType": "administrative-classification"
+            "osType": "functional-classification:generic:level2:code:full",
+            "conceptType": "functional-classification"
           },
           {
             "title": "Kostenart",
@@ -152,8 +152,8 @@
             "slug": "Kostenart",
             "type": "string",
             "format": "default",
-            "osType": "administrative-classification:generic:level3:code:full",
-            "conceptType": "administrative-classification"
+            "osType": "functional-classification:generic:level3:code:full",
+            "conceptType": "functional-classification"
           },
           {
             "title": "Betrag",

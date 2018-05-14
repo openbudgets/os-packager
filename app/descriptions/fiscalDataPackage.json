@@ -1,6 +1,50 @@
 {
   "model": {
     "dimensions": {
+      "unknown": {
+        "dimensionType": "other",
+        "primaryKey": [
+          "Plan_Ist"
+        ],
+        "attributes": {
+          "Prctr": {
+            "source": "Prctr",
+            "title": "Prctr"
+          },
+          "Konto": {
+            "source": "Konto",
+            "title": "Konto"
+          },
+          "PrCtrHW": {
+            "source": "PrCtrHW",
+            "title": "PrCtrHW"
+          },
+          "PSP_Element": {
+            "source": "PSP-Element",
+            "title": "PSP-Element"
+          },
+          "Kostenst": {
+            "source": "Kostenst.",
+            "title": "Kostenst."
+          },
+          "Auftrag": {
+            "source": "Auftrag",
+            "title": "Auftrag"
+          },
+          "GsBe": {
+            "source": "GsBe",
+            "title": "GsBe"
+          },
+          "Ver": {
+            "source": "Ver",
+            "title": "Ver"
+          },
+          "Plan_Ist": {
+            "source": "Plan_Ist",
+            "title": "Plan_Ist"
+          }
+        }
+      },
       "functional-classification": {
         "dimensionType": "classification",
         "primaryKey": [
@@ -85,7 +129,7 @@
   },
   "promise": {},
   "title": "",
-  "name": "11",
+  "name": "15",
   "resources": [
     {
       "name": "",
@@ -102,6 +146,24 @@
       "schema": {
         "fields": [
           {
+            "title": "Prctr",
+            "name": "Prctr",
+            "slug": "Prctr",
+            "type": "integer",
+            "format": "default",
+            "osType": "unknown:integer",
+            "conceptType": "unknown"
+          },
+          {
+            "title": "Konto",
+            "name": "Konto",
+            "slug": "Konto",
+            "type": "integer",
+            "format": "default",
+            "osType": "unknown:integer",
+            "conceptType": "unknown"
+          },
+          {
             "title": "Bezeichnung",
             "name": "Bezeichnung",
             "slug": "Bezeichnung",
@@ -109,6 +171,15 @@
             "format": "default",
             "osType": "functional-classification:generic:level4:code:full",
             "conceptType": "functional-classification"
+          },
+          {
+            "title": "PrCtrHW",
+            "name": "PrCtrHW",
+            "slug": "PrCtrHW",
+            "type": "string",
+            "format": "default",
+            "osType": "unknown:string",
+            "conceptType": "unknown"
           },
           {
             "title": "Text",
@@ -120,6 +191,33 @@
             "conceptType": "functional-classification"
           },
           {
+            "title": "PSP-Element",
+            "name": "PSP-Element",
+            "slug": "PSP_Element",
+            "type": "string",
+            "format": "default",
+            "osType": "unknown:string",
+            "conceptType": "unknown"
+          },
+          {
+            "title": "Kostenst.",
+            "name": "Kostenst.",
+            "slug": "Kostenst",
+            "type": "string",
+            "format": "default",
+            "osType": "unknown:string",
+            "conceptType": "unknown"
+          },
+          {
+            "title": "Auftrag",
+            "name": "Auftrag",
+            "slug": "Auftrag",
+            "type": "integer",
+            "format": "default",
+            "osType": "unknown:integer",
+            "conceptType": "unknown"
+          },
+          {
             "title": "Jahr",
             "name": "Jahr",
             "slug": "Jahr",
@@ -127,6 +225,24 @@
             "format": "default",
             "osType": "date:fiscal-year",
             "conceptType": "date"
+          },
+          {
+            "title": "GsBe",
+            "name": "GsBe",
+            "slug": "GsBe",
+            "type": "integer",
+            "format": "default",
+            "osType": "unknown:integer",
+            "conceptType": "unknown"
+          },
+          {
+            "title": "Ver",
+            "name": "Ver",
+            "slug": "Ver",
+            "type": "integer",
+            "format": "default",
+            "osType": "unknown:integer",
+            "conceptType": "unknown"
           },
           {
             "title": "Produktbereich",
@@ -176,6 +292,15 @@
             "conceptType": "direction"
           },
           {
+            "title": "Plan_Ist",
+            "name": "Plan_Ist",
+            "slug": "Plan_Ist",
+            "type": "string",
+            "format": "default",
+            "osType": "unknown:string-1:code",
+            "conceptType": "unknown"
+          },
+          {
             "title": "ID",
             "name": "ID",
             "slug": "ID",
@@ -193,6 +318,7 @@
           "Produktgruppe",
           "Kostenart",
           "Budget_Richtung",
+          "Plan_Ist",
           "ID"
         ]
       }

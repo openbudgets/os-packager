@@ -70,7 +70,7 @@ angular.module('Application')
                   var iri = JSON.parse(res.response).iri;
                   var executionId = iri.substr(1 + iri.lastIndexOf('/'), iri.length);
                   var executionOverviewUrl =
-                    'http://apps.openbudgets.eu/linkedpipes/test/resources/executions/' + executionId + '/overview';
+                    'http://openbudget.kdvz-frechen.de/linkedpipes/test/resources/executions/' + executionId + '/overview';
                   pollPipelineUntilReady(executionOverviewUrl);
                 });
               }

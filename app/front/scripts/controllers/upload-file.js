@@ -1,6 +1,7 @@
 'use strict';
 
 var _ = require('lodash');
+var Papa = require('papaparse');
 
 angular.module('Application')
   .controller('UploadFileController', [
@@ -40,11 +41,21 @@ angular.module('Application')
 
         $scope.onFileSelected = function() {
           var file = _.first(this.files);
-          $scope.model.file = file.name;
-          $scope.resetFromCurrentStep();
-          $scope.state = UploadFileService.resourceChanged(file, null);
-          $scope.isFileSelected = $scope.state.isFile;
-          $scope.isUrlSelected = false;
+          Papa.parse(file, {
+              complete: function(results){
+                for (var i=1; i<results.data.length; i++){
+                    for (var j=0; j<results.data[i].length; j++){
+                      var result = results.data[i][j].replace(/['",]+/g, '');
+                      results.data[i][j] = result;
+                    }
+                }
+                $scope.model.file = file.name;
+                $scope.resetFromCurrentStep();
+                $scope.state = UploadFileService.resourceChanged(new File([Papa.unparse(results)], file.name), null);
+                $scope.isFileSelected = $scope.state.isFile;
+                $scope.isUrlSelected = false;
+              }
+          });
         };
 
         $scope.onClearSelectedResource = function() {

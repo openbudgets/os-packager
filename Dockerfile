@@ -1,14 +1,16 @@
-FROM node:7-alpine
+FROM node:8-alpine
+
+RUN apk add --update --no-cache git
 
 WORKDIR /app
+ADD package.json .
+RUN npm install
+
 ADD . .
-
-RUN npm install && npm build
-
-ENV OS_PACKAGER_BASE_PATH=packager
+RUN npm run build
 
 ADD docker/settings.json /app/settings.json
 
 EXPOSE 8000
 
-CMD OS_CONDUCTOR="//${OS_EXTERNAL_ADDRESS}" /app/docker/startup.sh
+CMD npm start

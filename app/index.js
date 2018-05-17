@@ -9,14 +9,39 @@ var bodyParser = require('body-parser');
 
 var config = require('./config');
 var routes = require('./routes');
+var Raven = require('raven');
 
-module.exports.start = function() {
+module.exports.start = function(port) {
   return new Promise(function(resolve, reject) {
     var app = express();
 
+    app.set('trust proxy', true);
+
     app.set('config', config);
-    app.set('port', config.get('app:port'));
+    var usePort = config.get('app:port');
+    if (port) {
+      usePort = port;
+    }
+    app.set('port', usePort);
     app.set('views', path.join(__dirname, '/views'));
+
+    // Sentry monitoring
+    var sentryDSN = config.get('sentryDSN');
+    if (sentryDSN != null) {
+      Raven.config(sentryDSN).install();
+      app.use(Raven.requestHandler());
+      app.use(Raven.errorHandler());
+
+      // Fallthrough error handler
+      app.use(function onError(err, req, res, next) {
+        // The error id is attached to `res.sentry` to be returned
+        // and optionally displayed to the user for support.
+        res.statusCode = 500;
+        res.end('An error occurred: ' + res.sentry + '\n');
+      });
+    } else {
+      console.log('Sentry DSN not configured');
+    }
 
     // Middlewares
     if (config.get('env') == 'test') {

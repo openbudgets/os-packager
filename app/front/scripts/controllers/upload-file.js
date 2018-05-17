@@ -2,6 +2,7 @@
 
 var _ = require('lodash');
 var Papa = require('papaparse');
+var goodtablesUI = require('goodtables-ui');
 
 angular.module('Application')
   .controller('UploadFileController', [
@@ -70,6 +71,10 @@ angular.module('Application')
 
         $scope.onShowValidationResults = function() {
           $scope.bootstrapModal().show('validation-results');
+          goodtablesUI.render(
+            goodtablesUI.Report,
+            {report: $scope.state.status.report},
+            document.getElementById('validation-report'));
         };
       });
     }

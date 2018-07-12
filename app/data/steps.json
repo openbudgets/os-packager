@@ -2,8 +2,8 @@
   {
     "id": "upload-file",
     "order": 1,
-    "title": "Provide your data",
-    "subtitle": "Provide a CSV file containing fiscal data",
+    "title": "Datensatz bereitstellen",
+    "subtitle": "Hier können Sie Ihre CSV-Datei hochladen",
     "route": "/provide-data",
     "controller": "UploadFileController",
     "templateUrl": "templates/steps/upload-file.html"
@@ -11,8 +11,8 @@
   {
     "id": "metadata",
     "order": 3,
-    "title": "Provide metadata",
-    "subtitle": "Name your data-set and provide metadata for better indexing",
+    "title": "Metadaten hinzufügen",
+    "subtitle": "itte benennen Sie den Datensatz und fügen weitere hilfreiche Informationen hinzu",
     "route": "/provide-metadata",
     "controller": "ProvideMetadataController",
     "templateUrl": "templates/steps/provide-metadata.html"
@@ -20,8 +20,8 @@
   {
     "id": "download",
     "order": 4,
-    "title": "Confirm and Publish",
-    "subtitle": "Publish your data for in-depth visualizations and analysis",
+    "title": "Angaben bestätigen und Daten veröffentlichen",
+    "subtitle": "Bitte überprüfen Sie Ihre Angaben vor der Veröffentlichung",
     "route": "/download-package",
     "controller": "DownloadPackageController",
     "templateUrl": "templates/steps/download-package.html"

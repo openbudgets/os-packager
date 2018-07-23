@@ -12,7 +12,7 @@
     "id": "metadata",
     "order": 3,
     "title": "Metadaten hinzufügen",
-    "subtitle": "itte benennen Sie den Datensatz und fügen weitere hilfreiche Informationen hinzu",
+    "subtitle": "Bitte benennen Sie den Datensatz und fügen weitere hilfreiche Informationen hinzu",
     "route": "/provide-metadata",
     "controller": "ProvideMetadataController",
     "templateUrl": "templates/steps/provide-metadata.html"

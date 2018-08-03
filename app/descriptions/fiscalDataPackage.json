@@ -83,20 +83,7 @@
       }
     }
   },
-  "promise": {
-    "_c": [],
-    "_s": 1,
-    "_d": true,
-    "_h": 0,
-    "_n": false
-  },
-  "regionCode": "",
-  "countryCode": "",
-  "cityCode": "",
-  "fiscalPeriod": {
-    "start": "",
-    "end": ""
-  },
+  "promise": {},
   "title": "",
   "name": "",
   "description": "",

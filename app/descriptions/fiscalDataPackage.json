@@ -83,16 +83,30 @@
       }
     }
   },
-  "promise": {},
+  "promise": {
+    "_c": [],
+    "_s": 1,
+    "_d": true,
+    "_h": 0,
+    "_n": false
+  },
+  "regionCode": "",
+  "countryCode": "",
+  "cityCode": "",
+  "fiscalPeriod": {
+    "start": "",
+    "end": ""
+  },
   "title": "",
-  "name": "11",
+  "name": "",
+  "description": "",
   "resources": [
     {
       "name": "",
       "format": "csv",
       "path": "",
-      "mediatype": "application/vnd.ms-excel",
-      "bytes": 238650,
+      "mediatype": "text/csv",
+      "bytes": 195020,
       "dialect": {
         "csvddfVersion": 1,
         "delimiter": ",",
@@ -107,7 +121,7 @@
             "slug": "Bezeichnung",
             "type": "string",
             "format": "default",
-            "osType": "functional-classification:generic:level4:code:full",
+            "columnType": "functional-classification:generic:level4:code",
             "conceptType": "functional-classification"
           },
           {
@@ -116,7 +130,7 @@
             "slug": "Text",
             "type": "string",
             "format": "default",
-            "osType": "functional-classification:generic:level5:code:full",
+            "columnType": "functional-classification:generic:level5:code",
             "conceptType": "functional-classification"
           },
           {
@@ -125,7 +139,7 @@
             "slug": "Jahr",
             "type": "integer",
             "format": "default",
-            "osType": "date:fiscal-year",
+            "columnType": "date:fiscal-year",
             "conceptType": "date"
           },
           {
@@ -134,7 +148,7 @@
             "slug": "Produktbereich",
             "type": "string",
             "format": "default",
-            "osType": "functional-classification:generic:level1:code",
+            "columnType": "functional-classification:generic:level1:code",
             "conceptType": "functional-classification"
           },
           {
@@ -143,7 +157,7 @@
             "slug": "Produktgruppe",
             "type": "string",
             "format": "default",
-            "osType": "functional-classification:generic:level2:code:full",
+            "columnType": "functional-classification:generic:level2:code",
             "conceptType": "functional-classification"
           },
           {
@@ -152,7 +166,7 @@
             "slug": "Kostenart",
             "type": "string",
             "format": "default",
-            "osType": "functional-classification:generic:level3:code:full",
+            "columnType": "functional-classification:generic:level3:code",
             "conceptType": "functional-classification"
           },
           {
@@ -161,7 +175,7 @@
             "slug": "Betrag",
             "type": "number",
             "format": "default",
-            "osType": "value",
+            "columnType": "value",
             "conceptType": "value",
             "decimalChar": ".",
             "groupChar": ","
@@ -172,7 +186,7 @@
             "slug": "Budget_Richtung",
             "type": "string",
             "format": "default",
-            "osType": "direction",
+            "columnType": "direction",
             "conceptType": "direction"
           },
           {
@@ -181,7 +195,7 @@
             "slug": "ID",
             "type": "string",
             "format": "default",
-            "osType": "budget-line-id",
+            "columnType": "budget-line-id",
             "conceptType": "budget-line-id"
           }
         ],
